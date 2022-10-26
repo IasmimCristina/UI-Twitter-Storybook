@@ -1,4 +1,7 @@
+![banners-gihub-final](https://user-images.githubusercontent.com/100351576/198029391-b97e9781-2240-41ba-aada-16a376ed3bc5.gif)
 <h1 align="center" color="blue" > Projeto 🐦Twitter - tela home Storybook🐦 </h1>
+
+
 
 ***
 > _Storybook da tela Home do Twitter com suas versões light e dark._
