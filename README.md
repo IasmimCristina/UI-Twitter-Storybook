@@ -7,7 +7,7 @@
 <h1 align="center" color="blue" > Projeto 🐦Twitter - tela home Storybook🐦 </h1>
 
 <div align="center">
-<img  align="center" src="https://user-images.githubusercontent.com/100351576/198033565-699f08f4-1cd9-4c63-90ce-f0bc7c1e196f.jpg">
+<img  src="https://user-images.githubusercontent.com/100351576/198033565-699f08f4-1cd9-4c63-90ce-f0bc7c1e196f.jpg">
 </img>
 </div>
 
@@ -21,7 +21,7 @@
 > Figma: <a href="https://www.figma.com/file/E0J4sPihtdgIMI2Z4BOmLv/UI-Twitter-Web-(Community)?node-id=0%3A1">🎨UI Twitter Web (Community) – Figma📐</a> 
 
  
-### Tecnologias: 
+### Tecnologias ✨ 
 
 *  <img height= "100px" width="100px"
      src="https://user-images.githubusercontent.com/100351576/198030791-fff26edc-106f-4536-bf51-63fcd3a7a3d9.svg"
@@ -39,11 +39,8 @@
 
 
 ***
-
-
-
  
-## Requisitos:
+## Requisitos 👩‍💻
  - [X]  Componentes no StorybookSeguir cores, tamanhos e funcionalidadesBotões devem levar pra página 404
  - [x] Fotos podem ser aleatorias
  - [x] A  pagina deve ter scroll na coluna do meio (aparecer mais 2 ou 3 publicações)
@@ -51,10 +48,8 @@
  
  ***
  
-Entrega: Terça-feira, 1º de novembro. Até as 12h
+> Entrega: Terça-feira, 1º de novembro. Até as 12h.
 
-UI Twitter Web (Community)
-Created with Figma
 
 ***
 ![banners-gihub-final](https://user-images.githubusercontent.com/100351576/198029195-06625761-f2a2-4e25-8729-e6ad58541c57.gif)
