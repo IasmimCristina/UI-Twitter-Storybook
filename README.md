@@ -4,8 +4,8 @@
 > _Storybook da tela Home do Twitter com suas versões light e dark._
 
 
-Desafio Sprint 5
- 
+´Desafio Sprint 5´
+ 
 Figma:  UI Twitter Web (Community) – Figma
  
 Desenvolvimento: html, css (sass), Tyoescript e storybook
