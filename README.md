@@ -42,7 +42,10 @@
 
  
 ## Requisitos:
->Componentes no StorybookSeguir cores, tamanhos e funcionalidadesBotões devem levar pra página 404Fotos podem ser >aleatoriasA  pagina deve ter scroll na coluna do meio (aparecer mais 2 ou 3 publicações)380 coracteres para post de text e >fucionalidade de inserir fotosIndicativo de tempo da postagem
+>Componentes no StorybookSeguir cores, tamanhos e funcionalidadesBotões devem levar pra página 404
+>Fotos podem ser aleatorias
+>A  pagina deve ter scroll na coluna do meio (aparecer mais 2 ou 3 publicações)
+>380 coracteres para post de text e fucionalidade de inserir fotosIndicativo de tempo da postagem
  
  
 Entrega: Terça-feira, 1º de novembro. Até as 12h
