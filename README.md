@@ -13,7 +13,7 @@
 
 
 ***
-# _Storybook da tela Home do Twitter com suas versões light e dark._
+* _Storybook da tela Home do Twitter com suas versões light e dark._
 
 ***
  
@@ -53,6 +53,19 @@
 
 
 ***
+
+![logo-Compasso-Branco](https://user-images.githubusercontent.com/100351576/196284969-f7df7615-1007-4cf6-bce9-8789d85bc645.svg)
+
+---
+
+---
+
+## 🔗 Links
+
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ias-cristina)
+
+---
+
 ![banners-gihub-final](https://user-images.githubusercontent.com/100351576/198029195-06625761-f2a2-4e25-8729-e6ad58541c57.gif)
 
 
