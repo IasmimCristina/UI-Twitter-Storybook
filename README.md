@@ -11,7 +11,6 @@
 </img>
 </div>
 
-***
  <p align="center">
 Storybook da tela Home do Twitter com suas versões light e dark.
 </p>
