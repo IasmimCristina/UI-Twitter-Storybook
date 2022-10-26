@@ -6,7 +6,7 @@
 
 ## Desafio Sprint V 🎨
  
- <a href="[https://www.w3schools.com](https://www.figma.com/file/E0J4sPihtdgIMI2Z4BOmLv/UI-Twitter-Web-(Community)?node-id=0%3A1)">Figma:  UI Twitter Web (Community) – Figma</a> 
+ <a href="https://www.figma.com/file/E0J4sPihtdgIMI2Z4BOmLv/UI-Twitter-Web-(Community)?node-id=0%3A1">Figma:  UI Twitter Web (Community) – Figma</a> 
 
  
 ### Desenvolvimento: 
