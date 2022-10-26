@@ -16,6 +16,12 @@
 Storybook da tela Home do Twitter com suas versões light e dark.
 </p>
 
+## Requisitos 👩‍💻
+ - [X]  Componentes no StorybookSeguir cores, tamanhos e funcionalidadesBotões devem levar pra página 404
+ - [x] Fotos podem ser aleatorias
+ - [x] A  pagina deve ter scroll na coluna do meio (aparecer mais 2 ou 3 publicações)
+ - [x] 380 coracteres para post de text e fucionalidade de inserir fotosIndicativo de tempo da postagem
+
 ***
  <div align="center">
  
@@ -48,14 +54,7 @@ Figma: <a href="https://www.figma.com/file/E0J4sPihtdgIMI2Z4BOmLv/UI-Twitter-Web
 </div>
 
 ***
- 
-## Requisitos 👩‍💻
- - [X]  Componentes no StorybookSeguir cores, tamanhos e funcionalidadesBotões devem levar pra página 404
- - [x] Fotos podem ser aleatorias
- - [x] A  pagina deve ter scroll na coluna do meio (aparecer mais 2 ou 3 publicações)
- - [x] 380 coracteres para post de text e fucionalidade de inserir fotosIndicativo de tempo da postagem
- 
- ***
+
  
 > Entrega: Terça-feira, 1º de novembro. Até as 12h.
 
