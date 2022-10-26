@@ -23,7 +23,7 @@
 
  <div align="center">
  
-# Tecnologias ✨ 
+# 🕶️Tecnologias contidas no projeto ✨ 
 
   <img height= "100px" width="100px"
      src="https://user-images.githubusercontent.com/100351576/198030791-fff26edc-106f-4536-bf51-63fcd3a7a3d9.svg"
