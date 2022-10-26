@@ -6,7 +6,9 @@
 
 <h1 align="center" color="blue" > Projeto 🐦Twitter - tela home Storybook🐦 </h1>
 
-![Cover](https://user-images.githubusercontent.com/100351576/198033565-699f08f4-1cd9-4c63-90ce-f0bc7c1e196f.jpg)
+<img  align="center" src="https://user-images.githubusercontent.com/100351576/198033565-699f08f4-1cd9-4c63-90ce-f0bc7c1e196f.jpg">
+</img>
+
 
 
 ***
