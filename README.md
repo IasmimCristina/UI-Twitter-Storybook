@@ -64,7 +64,6 @@ Figma: <a href="https://www.figma.com/file/E0J4sPihtdgIMI2Z4BOmLv/UI-Twitter-Web
 <img src= "https://user-images.githubusercontent.com/100351576/196284969-f7df7615-1007-4cf6-bce9-8789d85bc645.svg" > </img>
 </div>
 
----
 
 ---
 
