@@ -26,6 +26,10 @@
 * Css (Sass)
 *  Typescript 
 *  Storybook
+*  <img 
+     src="https://user-images.githubusercontent.com/100351576/198030791-fff26edc-106f-4536-bf51-63fcd3a7a3d9.svg"
+     alt="icon">
+
 *  ![typescript-original](https://user-images.githubusercontent.com/100351576/198030791-fff26edc-106f-4536-bf51-63fcd3a7a3d9.svg)
 
 * ![storybook-original](https://user-images.githubusercontent.com/100351576/198030739-6e5f1539-6e3d-4c27-8224-d159e534095b.svg)
