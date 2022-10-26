@@ -22,10 +22,7 @@
 
  
 ### Tecnologias: 
-* Html
-* Css (Sass)
-*  Typescript 
-*  Storybook
+
 *  <img height= "100px" width="100px"
      src="https://user-images.githubusercontent.com/100351576/198030791-fff26edc-106f-4536-bf51-63fcd3a7a3d9.svg"
      alt="Typescript icon">
@@ -41,11 +38,11 @@
      alt="icon">
 
 
-
+***
 
  
-Requisitos:
-Componentes no StorybookSeguir cores, tamanhos e funcionalidadesBotões devem levar pra página 404Fotos podem ser aleatoriasA  pagina deve ter scroll na coluna do meio (aparecer mais 2 ou 3 publicações)380 coracteres para post de text e fucionalidade de inserir fotosIndicativo de tempo da postagem
+## Requisitos:
+>Componentes no StorybookSeguir cores, tamanhos e funcionalidadesBotões devem levar pra página 404Fotos podem ser >aleatoriasA  pagina deve ter scroll na coluna do meio (aparecer mais 2 ou 3 publicações)380 coracteres para post de text e >fucionalidade de inserir fotosIndicativo de tempo da postagem
  
  
 Entrega: Terça-feira, 1º de novembro. Até as 12h
