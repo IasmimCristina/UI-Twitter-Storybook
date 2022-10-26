@@ -29,12 +29,10 @@
 *  <img height= "100px" width="100px"
      src="https://user-images.githubusercontent.com/100351576/198030791-fff26edc-106f-4536-bf51-63fcd3a7a3d9.svg"
      alt="Typescript icon">
+
 *  <img height= "100px" width="100px"
      src="https://user-images.githubusercontent.com/100351576/198030739-6e5f1539-6e3d-4c27-8224-d159e534095b.svg"
-     alt="icon">
-*  <img height= "100px" width="100px"
-     src="https://user-images.githubusercontent.com/100351576/198030739-6e5f1539-6e3d-4c27-8224-d159e534095b.svg"
-     alt="icon">
+     alt="Storybook icon">
 *  <img height= "100px" width="100px"
      src="https://user-images.githubusercontent.com/100351576/198030758-1db770a7-6fbc-4101-8e76-b77806e7d0ec.svg"
      alt="icon">
