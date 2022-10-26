@@ -1,4 +1,7 @@
-![banners-gihub-final](https://user-images.githubusercontent.com/100351576/198029391-b97e9781-2240-41ba-aada-16a376ed3bc5.gif)
+![banners-gihub-final-animacao](https://user-images.githubusercontent.com/100351576/198030263-761fc3ce-2954-41b0-9025-a972a7e96fc6.gif)
+
+***
+
 <h1 align="center" color="blue" > Projeto 🐦Twitter - tela home Storybook🐦 </h1>
 
 
@@ -17,10 +20,11 @@
 * Css (Sass)
 *  Typescript 
 *  Storybook
-*  
-* ![HTML5_logo_and_wordmark svg](https://user-images.githubusercontent.com/100351576/198028741-603a3e89-5257-4058-8fcb-b726cb473e3d.png)
-* ![storybook-logo](https://user-images.githubusercontent.com/100351576/198028870-8e9b40ef-d32d-4251-ba3e-ad50e784d841.png)
-* ![typescript](https://user-images.githubusercontent.com/100351576/198028938-5e717e17-3545-40df-b28a-96b9ac0b8c18.svg)
+*  ![typescript-original](https://user-images.githubusercontent.com/100351576/198030791-fff26edc-106f-4536-bf51-63fcd3a7a3d9.svg)
+
+* ![storybook-original](https://user-images.githubusercontent.com/100351576/198030739-6e5f1539-6e3d-4c27-8224-d159e534095b.svg)
+
+*![sass-original](https://user-images.githubusercontent.com/100351576/198030758-1db770a7-6fbc-4101-8e76-b77806e7d0ec.svg)
 
 
 
@@ -33,6 +37,8 @@ Entrega: Terça-feira, 1º de novembro. Até as 12h
 
 UI Twitter Web (Community)
 Created with Figma
+
+***
 ![banners-gihub-final](https://user-images.githubusercontent.com/100351576/198029195-06625761-f2a2-4e25-8729-e6ad58541c57.gif)
 
 
