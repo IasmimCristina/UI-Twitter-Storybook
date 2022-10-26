@@ -1,8 +1,4 @@
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"> 
- 
- 
-<i class="devicon-html5-plain"></i>
-          
+      
  
 ![banners-gihub-final](https://user-images.githubusercontent.com/100351576/198029195-06625761-f2a2-4e25-8729-e6ad58541c57.gif)
 
@@ -10,6 +6,7 @@
 
 <h1 align="center" color="blue" > Projeto 🐦Twitter - tela home Storybook🐦 </h1>
 
+![Cover](https://user-images.githubusercontent.com/100351576/198033565-699f08f4-1cd9-4c63-90ce-f0bc7c1e196f.jpg)
 
 
 ***
@@ -40,6 +37,8 @@
 
 ***
 
+
+
  
 ## Requisitos:
  - [X]  Componentes no StorybookSeguir cores, tamanhos e funcionalidadesBotões devem levar pra página 404
@@ -47,7 +46,8 @@
  - [x] A  pagina deve ter scroll na coluna do meio (aparecer mais 2 ou 3 publicações)
  - [x] 380 coracteres para post de text e fucionalidade de inserir fotosIndicativo de tempo da postagem
  
- 
+ ***
+ 
 Entrega: Terça-feira, 1º de novembro. Até as 12h
 
 UI Twitter Web (Community)
