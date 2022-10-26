@@ -25,7 +25,7 @@ Storybook da tela Home do Twitter com suas versões light e dark.
 ***
  <div align="center">
  
-## Desafio Sprint V 🎨
+## 🧠 Desafio Sprint V 🎨
  
 Figma: <a href="https://www.figma.com/file/E0J4sPihtdgIMI2Z4BOmLv/UI-Twitter-Web-(Community)?node-id=0%3A1">🎨UI Twitter Web (Community) – Figma📐</a> 
 
@@ -34,7 +34,7 @@ Figma: <a href="https://www.figma.com/file/E0J4sPihtdgIMI2Z4BOmLv/UI-Twitter-Web
       
  <div align="center">
  
-# 🕶️ Tecnologias contidas no projeto ✨ 
+# ✨ Tecnologias contidas no projeto ✨ 
 
   <img height= "100px" width="100px"
      src="https://user-images.githubusercontent.com/100351576/198030791-fff26edc-106f-4536-bf51-63fcd3a7a3d9.svg"
@@ -70,7 +70,7 @@ Figma: <a href="https://www.figma.com/file/E0J4sPihtdgIMI2Z4BOmLv/UI-Twitter-Web
 
 <div align="center">
 
-## 🔗 Links
+## 🔗 Links 🕶️
 
 </div>
 
