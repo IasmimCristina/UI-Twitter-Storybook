@@ -1,4 +1,6 @@
 <h1 align="center" > Projeto 🐦Twitter - tela home Storybook🐦 </h1>
+
+***
 > _Storybook da tela Home do Twitter com suas versões light e dark._
 
 
