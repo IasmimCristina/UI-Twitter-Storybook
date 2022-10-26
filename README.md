@@ -30,4 +30,6 @@ Entrega: Terça-feira, 1º de novembro. Até as 12h
 
 UI Twitter Web (Community)
 Created with Figma
+![banners-gihub-final](https://user-images.githubusercontent.com/100351576/198029195-06625761-f2a2-4e25-8729-e6ad58541c57.gif)
+
 
