@@ -11,7 +11,7 @@
 </img>
 </div>
 
- <p align="center" color= "blue">
+ <p align="center" color= "blue" font-size="25px">
 Storybook da tela Home do Twitter com suas versões light e dark.
 </p>
 
@@ -26,7 +26,7 @@ Storybook da tela Home do Twitter com suas versões light e dark.
 </div>
 
 
-## Requisitos 👩‍💻
+## Requisitos 👩‍💻 
  - [X]  Componentes no Storybook;
  - [x]  Seguir cores, tamanhos e funcionalidadesBotões devem levar pra página 404;
  - [x]  Fotos podem ser aleatorias;
@@ -65,9 +65,12 @@ Figma: <a href="https://www.figma.com/file/E0J4sPihtdgIMI2Z4BOmLv/UI-Twitter-Web
 </div>
 
 ***
-
  
-> Entrega: Terça-feira, 1º de novembro. Até as 12h.
+ 
+ <p color="red" font-sice="30px">
+Entrega: Terça-feira, 1º de novembro. Até as 12h.
+</p>
+
 
 ***
 
