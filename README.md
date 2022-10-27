@@ -67,7 +67,7 @@ Figma: <a href="https://www.figma.com/file/E0J4sPihtdgIMI2Z4BOmLv/UI-Twitter-Web
 ***
  
  
- <p color="red" font-sice="30px">
+ <p color="red" align="center">
 Entrega: Terça-feira, 1º de novembro. Até as 12h.
 </p>
 
