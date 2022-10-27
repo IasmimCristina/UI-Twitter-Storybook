@@ -43,10 +43,15 @@ Figma: <a href="https://www.figma.com/file/E0J4sPihtdgIMI2Z4BOmLv/UI-Twitter-Web
 ### 👀 Aspectos de avaliação 👀
     
     
-    --> Readme criado e completo. ✨ <--
-    --> Storybook e seus componentes. ✨ <--
-    --> Página de erro 404. ✨ <--
-    --> Criação do aspecto visual e semântico da tela Home e seu toggle de light/dark. ✨ <--
+    --> ✨ Readme criado e completo. ✨ <--
+    --> ✨ Storybook e seus componentes. ✨ <--
+    --> ✨ Página de erro 404. ✨ <--
+    --> ✨ Criação do aspecto visual e semântico da tela Home e seu toggle de light/dark. ✨ <--
+                                                                                
+### Sprint V
+                                                                                               * Conhecimentos sobre Design System *
+                                                                                               * TypeScript e sua aplicação com POO *
+                                                                                               * Palestra sobre StoryBook *
 
 </div>
       
