@@ -49,9 +49,10 @@ Figma: <a href="https://www.figma.com/file/E0J4sPihtdgIMI2Z4BOmLv/UI-Twitter-Web
     --> ✨ Criação do aspecto visual e semântico da tela Home e seu toggle de light/dark. ✨ <--
                                                                                 
 ### Sprint V
-                                                                                               * Conhecimentos sobre Design System *
-                                                                                               * TypeScript e sua aplicação com POO *
-                                                                                               * Palestra sobre StoryBook *
+                                                                                               
+    * Conhecimentos sobre Design System *
+    * TypeScript e sua aplicação com POO *
+    * Palestra sobre StoryBook *
 
 </div>
       
