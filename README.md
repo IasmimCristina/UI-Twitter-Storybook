@@ -1,10 +1,10 @@
-      
+    
  
 ![banners-gihub-final](https://user-images.githubusercontent.com/100351576/198029195-06625761-f2a2-4e25-8729-e6ad58541c57.gif)
 
 ***
 
-<h1 align="center" color="blue" > Projeto 🐦Twitter - tela home Storybook🐦 </h1>
+<h1 align="center" color="blue" > Projeto 🐦Twitter - Tela Home(Feed) Storybook🐦 </h1>
 
 <div align="center">
 <img  src="https://user-images.githubusercontent.com/100351576/198033565-699f08f4-1cd9-4c63-90ce-f0bc7c1e196f.jpg">
