@@ -20,8 +20,8 @@ Storybook da tela Home do Twitter com suas versões light e dark.
 </h3>
 <div align="center" color="darkred">
 
-![Dark](https://user-images.githubusercontent.com/100351576/198385303-4b86fb20-9d3e-4101-9c2b-30d1d03cedc5.jpg)
 ![Light](https://user-images.githubusercontent.com/100351576/198385306-75c8d0ca-8f83-4c7b-a98e-6f844e7f0aab.jpg)
+![Dark](https://user-images.githubusercontent.com/100351576/198385303-4b86fb20-9d3e-4101-9c2b-30d1d03cedc5.jpg)
 
 </div>
 
