@@ -63,20 +63,19 @@ Figma: <a href="https://www.figma.com/file/E0J4sPihtdgIMI2Z4BOmLv/UI-Twitter-Web
 
 
  
-  <img height= "100px" width="100px"
-     src="https://user-images.githubusercontent.com/100351576/198751296-07c9a92b-7949-44b0-ba58-8ae2d28e71c4.svg"
-     alt="Tailwind icon">
+ 
   
   <img height= "100px" width="100px"
      src="https://user-images.githubusercontent.com/100351576/198030791-fff26edc-106f-4536-bf51-63fcd3a7a3d9.svg"
      alt="Typescript icon">
+     
+  <img height= "100px" width="100px"
+     src="https://user-images.githubusercontent.com/100351576/198751296-07c9a92b-7949-44b0-ba58-8ae2d28e71c4.svg"
+     alt="Tailwind icon">
 
   <img height= "100px" width="100px"
      src="https://user-images.githubusercontent.com/100351576/198030739-6e5f1539-6e3d-4c27-8224-d159e534095b.svg"
-     alt="Storybook icon">
-  <img height= "100px" width="100px"
-     src="https://user-images.githubusercontent.com/100351576/198030758-1db770a7-6fbc-4101-8e76-b77806e7d0ec.svg"
-     alt="icon">
+     alt="Storybook icon"> 
   <img height= "100px" width="100px"
      src="https://user-images.githubusercontent.com/100351576/198032634-55b66f87-4c93-4a75-ba13-43503dc9406c.svg"
      alt="icon">
