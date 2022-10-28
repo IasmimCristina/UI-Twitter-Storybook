@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react'
-import { Text, Textprops } from './Text'
+import { Text, TextProps } from './Text'
 
 export default {
   title: 'Components/Text',
@@ -8,48 +8,60 @@ export default {
     children: 'Example.'
   },
 
-} as Meta<Textprops>
+} as Meta<TextProps>
 
 
-export const Default: StoryObj<Textprops> = {}
+export const Default: StoryObj<TextProps> = {}
 
-export const SuperExtraSmall: StoryObj<Textprops> = {
+export const SuperExtraSmall: StoryObj<TextProps> = {
   args: {
     size: 'sxs',
   }
 }
-export const ExtraSmall: StoryObj<Textprops> = {
+export const ExtraSmall: StoryObj<TextProps> = {
   args: {
     size: 'xs',
   }
 }
-export const Small: StoryObj<Textprops> = {
+export const Small: StoryObj<TextProps> = {
   args: {
     size: 'sm',
   }
 }
-export const Medium: StoryObj<Textprops> = {
+export const Medium: StoryObj<TextProps> = {
   args: {
     size: 'md',
   }
 }
-export const Large: StoryObj<Textprops> = {
+export const Large: StoryObj<TextProps> = {
   args: {
     size: 'lg',
   }
 }
-export const ExtraLarge: StoryObj<Textprops> = {
+export const ExtraLarge: StoryObj<TextProps> = {
   args: {
     size: 'xlg',
   }
 }
 
-export const CustomComponent: StoryObj<Textprops> = {
+export const CustomComponent: StoryObj<TextProps> = {
   args: {
     asChild: true,
     children: (
-      <p>Testing...</p>
+      <p>Text with the 'p' tag</p>
     )
+  },
+  argTypes: {
+    children: {
+      table: {
+        disable: true,
+      }
+    },
+    asChild: {
+      table: {
+        disable: true,
+      }
+    },
   }
 }
 

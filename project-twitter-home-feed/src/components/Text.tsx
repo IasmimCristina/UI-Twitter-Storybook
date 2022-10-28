@@ -3,23 +3,23 @@ import { Slot } from '@radix-ui/react-slot';
 import { clsx } from 'clsx';
 
 
-export interface Textprops {
+export interface TextProps {
   size?: 'sxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xlg';
   children: ReactNode;
   isDark?: boolean;
   isPrimary?: boolean;
   asChild?: boolean;
 }
-export function Text({ size = 'md', isDark = false, isPrimary = true, children, asChild }: Textprops) {
+export function Text({ size = 'md', isDark = false, isPrimary = true, children, asChild }: TextProps) {
 
   const Comp = asChild ? Slot : 'span';
 
   return (
     <Comp className={
       clsx(
-        'font-sans',
+        'font-sans font-semibold',
         {
-          //Fazer a condição do texto nublado. 48min.
+          
 
           // Variações dark e light
           'text-black': isDark === false && isPrimary,
