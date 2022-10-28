@@ -78,7 +78,7 @@ Figma: <a href="https://www.figma.com/file/E0J4sPihtdgIMI2Z4BOmLv/UI-Twitter-Web
 
 #  🌈 Estilos do projeto 🌈
 
-   colors: {
+      colors: {
          'black': '#0F1419',
 
          // Dark - Tons
@@ -96,11 +96,13 @@ Figma: <a href="https://www.figma.com/file/E0J4sPihtdgIMI2Z4BOmLv/UI-Twitter-Web
          'white': '#FFFFFF',
       }
       
-# 💡🔤 Fontes e suas variações 🔤💡  
+## 💡🔤 Fontes e suas variações 🔤💡  
+_____________________________  
+--> Fonte: **Poppins**. ⚐ <--
+--> Peso: **medium**. (500) ⚑ <--
+--> Peso: **bold**. (700) ⚑ <--
+_____________________________
 
-*  --> Fonte: Poppins. ⚐
-*  --> Peso: medium. (500) ⚑
-*  --> Peso: bold. (700) ⚑
 </div>
 
 ***
