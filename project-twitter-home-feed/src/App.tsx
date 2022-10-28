@@ -5,7 +5,7 @@ export function App() {
 
   return (
     <>
-      <h1 className='font-bold text-red-900'> Hello, world!</h1>
+      <h1 className='text-xlg font-bold text-red-900'> Hello, world!</h1>
 
       <button className='bg-primary-blue hover:bg-dark-8'>
         enviar

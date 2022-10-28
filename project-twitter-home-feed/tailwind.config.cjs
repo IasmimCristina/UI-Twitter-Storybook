@@ -5,7 +5,14 @@ module.exports = {
   ],
   theme: {
     fontSize: {
-// 19, 15,16,13, 14, 20 || 13 14 15 16 19 20
+      // Tamanhos: || 13 14 15 16 19 20
+      sxs: 13, // Super extra small.
+      xs: 14, // Extra small.
+      sm: 15, // Small.
+      md: 16, // Medium.
+      lg: 19, // Large.
+      xlg: 20, // Extra large.
+
     },
 
     colors: {
