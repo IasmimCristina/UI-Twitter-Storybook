@@ -60,8 +60,12 @@ Figma: <a href="https://www.figma.com/file/E0J4sPihtdgIMI2Z4BOmLv/UI-Twitter-Web
  
 # ✨ Tecnologias contidas no projeto ✨ 
 
-  TAILWIND
-  VITE
+
+
+ 
+  <img height= "100px" width="100px"
+     src="https://user-images.githubusercontent.com/100351576/198751296-07c9a92b-7949-44b0-ba58-8ae2d28e71c4.svg"
+     alt="Tailwind icon">
   
   <img height= "100px" width="100px"
      src="https://user-images.githubusercontent.com/100351576/198030791-fff26edc-106f-4536-bf51-63fcd3a7a3d9.svg"
