@@ -7,7 +7,7 @@ export function App() {
     <>
       <h1 className='font-bold text-red-900'> Hello, world!</h1>
 
-      <button className='bg-red-400 hover:bg-white'>
+      <button className='bg-primary-blue hover:bg-dark-8'>
         enviar
       </button>
     </>
