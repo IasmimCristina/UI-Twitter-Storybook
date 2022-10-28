@@ -99,16 +99,15 @@ Figma: <a href="https://www.figma.com/file/E0J4sPihtdgIMI2Z4BOmLv/UI-Twitter-Web
 
       
 ## 💡🔤 Fontes e suas variações 🔤💡  
-_____________________________  
---> Fonte: **Poppins**. ⚐ <--
---> Peso: **medium**. (500) ⚑ <--
---> Peso: **bold**. (700) ⚑ <--
-_____________________________
+ 
+- [x] --> Fonte: **Poppins**. ⚐ <--
+- [x] --> Peso: **medium**. (500) ⚑ <--
+- [x] --> Peso: **bold**. (700) ⚑ <--
+
 
 </div>
 
-***
- 
+*** 
  
  <p color="red" align="center">
 Entrega: Terça-feira, 1º de novembro. Até as 12h.
