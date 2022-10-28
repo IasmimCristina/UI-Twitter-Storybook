@@ -61,6 +61,7 @@ Figma: <a href="https://www.figma.com/file/E0J4sPihtdgIMI2Z4BOmLv/UI-Twitter-Web
 # ✨ Tecnologias contidas no projeto ✨ 
 
   TAILWIND
+  VITE
   
   <img height= "100px" width="100px"
      src="https://user-images.githubusercontent.com/100351576/198030791-fff26edc-106f-4536-bf51-63fcd3a7a3d9.svg"
@@ -78,10 +79,10 @@ Figma: <a href="https://www.figma.com/file/E0J4sPihtdgIMI2Z4BOmLv/UI-Twitter-Web
 
 #  🌈 Estilos do projeto 🌈
 
-      colors: {
-         'black': '#0F1419',
 
-         // Dark - Tons
+         
+
+          Tons escuros
          'dark-1': '#17202A',
          'dark-2': '#1C2733',
          'dark-3': '#283340',
@@ -90,11 +91,12 @@ Figma: <a href="https://www.figma.com/file/E0J4sPihtdgIMI2Z4BOmLv/UI-Twitter-Web
          'dark-6': '#8899A6',
          'dark-7': '#EBEEF0',
          'dark-8': '#F7F9FA',
-         // -----------
-
+         
+          Cores gerais
+         'black': '#0F1419',
          'primary-blue': '#1DA1F2',
          'white': '#FFFFFF',
-      }
+
       
 ## 💡🔤 Fontes e suas variações 🔤💡  
 _____________________________  
