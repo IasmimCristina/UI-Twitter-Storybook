@@ -100,9 +100,9 @@ Figma: <a href="https://www.figma.com/file/E0J4sPihtdgIMI2Z4BOmLv/UI-Twitter-Web
       
 ## 💡🔤 Fontes e suas variações 🔤💡  
  
-- [x]  Fonte: **Poppins**. ⚐ <--
-- [x]  Peso: **medium**. (500) ⚑ <--
-- [x]  Peso: **bold**. (700) ⚑ <--
+- [x]  Fonte: **Poppins**. ⚐ 
+- [x]  Peso: **medium**. (500) ⚑ 
+- [x]  Peso: **bold**. (700) ⚑ 
 
 
 </div>
