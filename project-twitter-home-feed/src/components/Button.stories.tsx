@@ -21,7 +21,6 @@ export const Default: StoryObj<ButtonProps> = {
   }
 }
 
-//Parei em 1 hora e seis!
 // type?: 'primary' | 'follow' | 'login' | 'signup';
 
 export const Primary: StoryObj<ButtonProps> = {
