@@ -14,7 +14,12 @@ module.exports = {
       xlg: 20, // Extra large.
 
     },
+    fontWeight: {
+      bold: 700,
+      semibold: 500,
+      900: 900,
 
+    },
     colors: {
       'black': '#0F1419',
       'transparent': 'transparent',
@@ -30,6 +35,7 @@ module.exports = {
       'dark-8': '#F7F9FA',
       // -----------
 
+      'red': '#F4245E',
       'primary-blue': '#1DA1F2',
       'white': '#FFFFFF',
     },

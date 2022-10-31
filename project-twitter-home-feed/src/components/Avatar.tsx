@@ -1,8 +1,12 @@
-import { ImgHTMLAttributes, ReactNode } from 'react';
-
-
+import { ImgHTMLAttributes} from 'react';
 import { clsx } from 'clsx';
 
+import imageFile from '../static/Profile.svg';
+
+const image = {
+  src: imageFile,
+  alt: 'User',
+};
 
 
 export interface AvatarProps extends ImgHTMLAttributes<HTMLImageElement> {
@@ -17,7 +21,8 @@ export function Avatar({ size = 'small'  }: AvatarProps) {
 
 
   return (
-    <> <div className={
+    <> <div >
+      <img className={
       clsx(
         'rounded-full bg-white text-sxs text-primary-blue border-0',
         {
@@ -27,8 +32,7 @@ export function Avatar({ size = 'small'  }: AvatarProps) {
 
         }
 
-      )}>
-      <img  src="" alt="User">
+      )} src={image.src} alt={image.alt}>
 
       </img>
     </div>
