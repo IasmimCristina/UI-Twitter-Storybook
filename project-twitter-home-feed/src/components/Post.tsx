@@ -18,7 +18,7 @@ export function Post({ type = 'normal' }: PostProps) {
             <img src="" alt="User">
             </img>
           </div>
-          <input type="text" placeholder='What´s happening?' maxLength={280} className={clsx('text-black ml-3 h-4 w-96 p-2 bg-transparent focus:ring-4 ring-dark-5 outline-none ', {
+          <input type="text" placeholder='What´s happening?' maxLength={280} className={clsx('text-xlg text-black ml-3 h-4 w-96 p-2 bg-transparent focus:ring-4 ring-dark-5 outline-none ', {
             'placeholder-dark-5': type === 'normal',
             'placeholder-dark-6': type === 'dark',
 
