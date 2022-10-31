@@ -17,6 +17,7 @@ module.exports = {
 
     colors: {
       'black': '#0F1419',
+      'transparent': 'transparent',
 
       // Dark - Tons
       'dark-1': '#17202A',
