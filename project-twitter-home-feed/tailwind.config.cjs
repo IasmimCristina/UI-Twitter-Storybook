@@ -43,6 +43,10 @@ module.exports = {
       fontFamily: {
         sans: 'Poppins, sans-serif',
       },
+      spacing: {
+        '460px': '28.75rem',
+        '360px': '22.5rem',
+      }
     },
   },
   plugins: [],
