@@ -28,7 +28,8 @@ Storybook da tela Home do Twitter com suas versões light e dark.
 ## 📖 Status do projeto:
 * Incompleto. 🕁
 * Apenas o Storybook feito. Para iniciá-lo precisa-se de uma versão 16 do Node.
-      npm run storybook
+
+               npm run storybook
 
 
 
