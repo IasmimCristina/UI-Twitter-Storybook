@@ -19,15 +19,11 @@ export interface SideMenuProps {
 }
 export function SideMenu({ type = 'normal', menuItemSelected = 'Home' }: SideMenuProps) {
 
-  const styleMenuSelected = {
-    divBorder: 'border-primary-blue',
-    textIconColor: 'text-primary-blue',
-
-  }
+ 
 
 
   return (
-    <div className='p-4 h-screen  w-1/3 flex flex-col  justify-between'>
+    <div className='p-4 h-screen flex flex-col  justify-between'>
       <div className="ml-10">
         <div className="ml-2">
           <TwitterLogo weight="fill" className={clsx(' h-7 w-6', {

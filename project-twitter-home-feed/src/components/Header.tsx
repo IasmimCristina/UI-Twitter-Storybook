@@ -37,7 +37,7 @@ export function Header({ type = 'normal', page = 'Home' }: HeaderProps) {
 
 
   return (
-    <div className='h-4  p-2' >
+    <header className='h-4  p-2' >
       <div className="flex justify-between items-center">
 
         <div className=" flex  items-center ">
@@ -74,6 +74,6 @@ export function Header({ type = 'normal', page = 'Home' }: HeaderProps) {
 
       })} />
 
-    </div >
+    </header >
   )
 }

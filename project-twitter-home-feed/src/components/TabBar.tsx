@@ -1,4 +1,3 @@
-import { clsx } from 'clsx';
 import { TabBarItem, TabBarItemProps } from './TabBarItem'
 
 
@@ -9,10 +8,10 @@ export interface TabBarProps {
 
 }
 export function TabBar({ appearance = 'normal', itemSelected = 'Tweets' }: TabBarProps) {
-  let isTweetsSelected = false;
-  let isTweetsRepliesSelected = false;
-  let isMediaSelected = false;
-  let isLikesSelected = false;
+  let isTweetsSelected;
+  let isTweetsRepliesSelected;
+  let isMediaSelected;
+  let isLikesSelected;
 
   //Switch que criaria as variações desses itens. 
   switch (itemSelected) {

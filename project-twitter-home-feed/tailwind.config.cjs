@@ -10,14 +10,17 @@ module.exports = {
       xs: 14, // Extra small.
       sm: 15, // Small.
       md: 16, // Medium.
+      size18: 18,
       lg: 19, // Large.
       xlg: 20, // Extra large.
+      sxlg: 42,
 
     },
     fontWeight: {
       bold: 700,
       semibold: 500,
       900: 900,
+      400:400,
 
     },
     colors: {
@@ -44,8 +47,12 @@ module.exports = {
         sans: 'Poppins, sans-serif',
       },
       spacing: {
-        '460px': '28.75rem',
         '360px': '22.5rem',
+        '460px': '28.75rem',
+        '450px': '28.125rem', 
+        '476px': '29.75rem',        
+
+        '600px': '37.5rem',
       }
     },
   },
