@@ -10,7 +10,21 @@ export default {
 
 
 export const Default: StoryObj<FooterProps> = {
- 
+  args: {
+    type: 'normal',
+
+  },
 }
+
+export const DarkVersion: StoryObj<FooterProps> = {
+  args: {
+    type: 'dark',
+
+  },
+
+
+}
+
+
 
 

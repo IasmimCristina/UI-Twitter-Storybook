@@ -1,28 +1,40 @@
+import clsx from "clsx"
 
 
 
 
 export interface FooterProps {
 
-  
+  type?: 'normal' | 'dark';
 
 }
-export function Footer({  }: FooterProps) {
-  
-  
+export function Footer({ type = 'normal' }: FooterProps) {
+
+
 
   return (
-  <footer className=' w-full h-20 bg-primary-blue flex justify-between'>
-    <section>
-      <span>Don't miss what's happening</span>
-      <span>People on Twitter are the first to know.</span>
-    </section>
+    <footer className=' w-full h-28 bg-primary-blue '>
+      <div className="flex justify-between  items-center p-2">
 
-    <div>
-      <button>Log in</button>
-      <button>Sign up</button>
+        <section className="flex flex-col ml-72">
+          <span className={clsx("  text-sxlg font-sans font-900 ", {
+            'text-black': type === 'dark',
+            'text-white': type === 'normal',
+          })} >Don't miss what's happening</span>
+          <span className={clsx("text-md font-400 ", {
+            'text-black': type === 'dark',
+            'text-white': type === 'normal',
 
-    </div>
-  </footer>
+          })} >People on Twitter are the first to know.</span>
+        </section>
+
+        <section className="flex gap-4">
+          <button className="  w-20 h-10 font-sans font-bold rounded-full transition-all border focus:ring-4 ring-dark-5 text-white   bg-transparent  border-white hover:text-black hover:bg-white  "
+          >Log in</button>
+          <button className=" w-24 h-10  font-sans font-bold rounded-full transition-all border focus:ring-4 ring-dark-5 text-black   bg-white  border-white hover:text-white  hover:bg-transparent"
+          >Sign up</button>
+        </section>
+      </div>
+    </footer>
   )
 }
