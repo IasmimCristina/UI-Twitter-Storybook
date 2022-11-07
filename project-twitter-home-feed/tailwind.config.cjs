@@ -14,6 +14,7 @@ module.exports = {
       lg: 19, // Large.
       xlg: 20, // Extra large.
       sxlg: 42,
+      enormous: 84,
 
     },
     fontWeight: {

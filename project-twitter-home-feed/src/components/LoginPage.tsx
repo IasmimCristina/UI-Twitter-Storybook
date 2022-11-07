@@ -17,13 +17,13 @@ export interface LoginPageProps {
 export function LoginPage({ type = 'normal' }: LoginPageProps) {
 
   return (
-    <div className={clsx('w-full h-screen flex items-center justify-center ', {
+    <body className={clsx('w-full h-screen flex items-center justify-center ', {
       'bg-white': type === 'normal',
       'bg-black': type === 'dark',
 
     })}>
 
-      <section className=' w-450px h-476px  ' >
+      <main className=' w-450px h-476px  ' >
         <TwitterLogo weight="fill" className={clsx('w-12 h-10 cursor-pointer hover:text-dark-4 transition-all', {
           'text-primary-blue': type === 'normal',
           'text-white': type === 'dark',
@@ -54,10 +54,10 @@ export function LoginPage({ type = 'normal' }: LoginPageProps) {
   <span className={' font-400 transition-all cursor-pointer hover:text-xlg'} >Sign up to Twitter</span>
 
 </div>
-      </section>
+      </main>
 
 
 
-    </div >
+    </body >
   )
 }
