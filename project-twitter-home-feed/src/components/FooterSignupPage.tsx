@@ -38,23 +38,6 @@ export function FooterSignupPage({ type = 'normal' }: FooterSignupPageProps) {
         <FooterSignupItem type={type} itemText="© 2021 Twitter, Inc." />
 
 
-        {/* <li>About</li>
-  <li>Help Center</li>
-  <li>Terms of service</li>
-  <li>Privacy Policy</li>
-  <li>Cookie Policy</li>
-  <li>Ads Info</li>
-  <li>Blog</li>
-  <li>Status</li>
-  <li>Carrres</li>
-  <li>Brand Resources</li>
-  <li>Advertising</li>
-  <li>Marketing</li>
-  <li>Twitter for Business</li>
-  <li>Developers</li>
-  <li></li>
-  <li></li>
-  <li></li> */}
       </ul>
 
     </footer>

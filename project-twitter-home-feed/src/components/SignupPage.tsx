@@ -1,6 +1,7 @@
 import { clsx } from 'clsx';
 import { TwitterLogo } from "phosphor-react";
 import { FooterSignupPage } from './FooterSignupPage';
+import { SignupButtons } from './SignupButtons';
 
 
 
@@ -40,6 +41,10 @@ export function SignupPage({ type = 'normal' }: SignupPageProps) {
 
           {/* Botões da
 página. */}
+
+          <SignupButtons type={type} buttonType='Google' />
+          <SignupButtons type={type} buttonType='Apple' />
+          <SignupButtons type={type} buttonType='PhoneEmail' />
 
           <div>
             <article>

@@ -21,7 +21,7 @@ module.exports = {
       bold: 700,
       semibold: 500,
       900: 900,
-      400:400,
+      400: 400,
 
     },
     colors: {
@@ -50,9 +50,9 @@ module.exports = {
       spacing: {
         '360px': '22.5rem',
         '460px': '28.75rem',
-        '450px': '28.125rem', 
-        '476px': '29.75rem',        
-
+        '450px': '28.125rem',
+        '476px': '29.75rem',
+        '403px': '25.1875rem',
         '600px': '37.5rem',
       }
     },
