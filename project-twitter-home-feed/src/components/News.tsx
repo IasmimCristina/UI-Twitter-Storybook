@@ -30,8 +30,8 @@ export function News({ type = 'normal', }: NewsProps) {
   return (
     <div className={clsx('h-460px w-360px rounded-lg ', {
 
-      'bg-white': type === 'normal',
-      'bg-black': type === 'dark',
+      'bg-dark-8': type === 'normal',
+      'bg-dark-2': type === 'dark',
     })}>
       <h2 className={clsx('ml-4 font-sans font-bold text-xlg', {
         'text-black': type === 'normal',

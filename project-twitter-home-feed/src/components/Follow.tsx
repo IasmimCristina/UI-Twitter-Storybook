@@ -30,8 +30,8 @@ export function Follow({ type = 'normal', }: FollowProps) {
   return (
     <div className={clsx('h-60 w-96 rounded-lg ', {
 
-      'bg-white': type === 'normal',
-      'bg-black': type === 'dark',
+      'bg-dark-8': type === 'normal',
+      'bg-dark-2': type === 'dark',
     })}>
       <h2 className={clsx('ml-4 font-sans font-bold text-xlg', {
         'text-black': type === 'normal',
