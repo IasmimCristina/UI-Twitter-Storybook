@@ -14,12 +14,43 @@ export interface SideMenuProps {
 
   type?: 'dark' | 'normal';
   menuItemSelected: 'Home' | 'Explore' | 'Notifications' | 'Messages' | 'Bookmarks' | 'Lists' | 'Profile' | 'More';
+  page?: 'pageHome' | 'HomeNoLogin';
 
 
 }
-export function SideMenu({ type = 'normal', menuItemSelected = 'Home' }: SideMenuProps) {
+export function SideMenu({ type = 'normal', menuItemSelected = 'Home', page = 'pageHome' }: SideMenuProps) {
 
- 
+  let sideMenuProfile;
+  if (page === "pageHome") {
+    sideMenuProfile = {
+      content: <div className="flex flex-row gap-2 w-64  justify-between items-center">
+        <div className="flex flex-row gap-2">
+          <img className='h-10 w-10 rounded-full ml-2 bg-white text-sxs text-primary-blue border-0' src={image.src} alt={image.alt} />
+          <div className="flex flex-col ">
+            <span className={clsx(` text-md dark:text-white `, {
+              'text-black': type == 'normal',
+              'text-white': type == 'dark',
+
+            })}>Davide Biscuso</span>
+            <span className={clsx(` text-md dark:text-dark-6 `, {
+              'text-dark-5': type == 'normal',
+              'text-dark-6': type == 'dark',
+
+            })}>@biscuttu</span>
+          </div>
+        </div>
+        <DotsThreeOutline className={clsx(' transition-all w-12 h-4 hover:w-14 hover:h-6 cursor-pointer hover:text-primary-blue dark:text-white dark:hover:text-primary-blue', {
+
+          'text-black ': type == 'normal',
+          'text-white': type == 'dark',
+        })} />
+      </div>
+    }
+  } else {
+    sideMenuProfile = {
+      content: '',
+    }
+  }
 
 
   return (
@@ -228,29 +259,8 @@ export function SideMenu({ type = 'normal', menuItemSelected = 'Home' }: SideMen
       </div>
       <div className="flex flex-row gap-2   ">
 
-        <div className="flex flex-row gap-2 w-64  justify-between items-center">
-          <div className="flex flex-row gap-2">
-            <img className='h-10 w-10 rounded-full ml-2 bg-white text-sxs text-primary-blue border-0' src={image.src} alt={image.alt} />
-            <div className="flex flex-col ">
-              <span className={clsx(` text-md dark:text-white `, {
-                'text-black': type == 'normal',
-                'text-white': type == 'dark',
 
-              })}>Davide Biscuso</span>
-              <span className={clsx(` text-md dark:text-dark-6 `, {
-                'text-dark-5': type == 'normal',
-                'text-dark-6': type == 'dark',
-
-              })}>@biscuttu</span>
-            </div>
-          </div>
-          <DotsThreeOutline className={clsx(' transition-all w-12 h-4 hover:w-14 hover:h-6 cursor-pointer hover:text-primary-blue dark:text-white', {
-
-            'text-black ': type == 'normal',
-            'text-white': type == 'dark',
-          })} />
-        </div>
-
+        {sideMenuProfile.content}
       </div>
 
 

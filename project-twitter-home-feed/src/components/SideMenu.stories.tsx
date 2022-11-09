@@ -15,6 +15,7 @@ export default {
 export const Default: StoryObj<SideMenuProps> = {
   args: {
     type: 'normal',
+    page: 'pageHome'
 
   },
 }
@@ -22,7 +23,7 @@ export const Default: StoryObj<SideMenuProps> = {
 export const DarkVersion: StoryObj<SideMenuProps> = {
   args: {
     type: 'dark',
-
+    page: 'pageHome'
   },
 
 

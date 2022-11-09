@@ -34,16 +34,16 @@ export function ProfileArea({ type = 'normal', description = '💀Writer✨✨ |
 
       <div className='flex flex-col  ml-5'  >
         <div className="flex flex-col">
-          <span className={clsx('text-xlg font-bold', {
+          <span className={clsx('text-xlg font-bold dark:text-white', {
             'text-black': type == 'normal',
             'text-white': type == 'dark',
           })} >Davide Biscuso</span>
-          <span className={clsx('text-md font-semibold', {
+          <span className={clsx('text-md font-semibold dark:text-dark-6', {
             'text-dark-5': type == 'normal',
             'text-dark-6': type == 'dark',
           })}>@biscuttu</span>
         </div>
-        <article className={clsx('mt-3 text-md font-semibold', {
+        <article className={clsx('mt-3 text-md font-semibold dark:text-white', {
           'text-black': type == 'normal',
           'text-white': type == 'dark',
 
@@ -54,11 +54,11 @@ export function ProfileArea({ type = 'normal', description = '💀Writer✨✨ |
 
 
             <div className="flex items-center gap-2">
-              <MapPin className={clsx('w-4 h-4', {
+              <MapPin className={clsx('w-4 h-4 dark:text-dark-6', {
                 'text-dark-5': type == 'normal',
                 'text-dark-6': type == 'dark',
               })} />
-              <span className={clsx('  font-sans font-semibold text-md', {
+              <span className={clsx('  font-sans font-semibold text-md dark:text-dark-6', {
                 'text-dark-5': type == 'normal',
                 'text-dark-6': type == 'dark',
               })}>
@@ -67,11 +67,11 @@ export function ProfileArea({ type = 'normal', description = '💀Writer✨✨ |
             </div>
 
             <div className="flex items-center gap-2">
-              <CalendarPlus className={clsx('w-5 h-5', {
+              <CalendarPlus className={clsx('w-5 h-5 dark:text-dark-6', {
                 'text-dark-5': type == 'normal',
                 'text-dark-6': type == 'dark',
               })} />
-              <span className={clsx('font-sans font-semibold text-md', {
+              <span className={clsx('font-sans font-semibold text-md dark:text-dark-6', {
                 'text-dark-5': type == 'normal',
                 'text-dark-6': type == 'dark',
               })}>
@@ -80,20 +80,20 @@ export function ProfileArea({ type = 'normal', description = '💀Writer✨✨ |
             </div>
           </div>
           <div className='flex gap-4 '>
-            <span className={clsx('font-semibold text-md', {
+            <span className={clsx('font-semibold text-md dark:text-dark-6', {
               'text-dark-5': type == 'normal',
               'text-dark-6': type == 'dark',
             })}>
-              <span className={clsx('font-bold mr-1 ', {
+              <span className={clsx('font-bold mr-1 dark:text-white', {
                 'text-black': type == 'normal',
                 'text-white': type == 'dark',
               })}>542</span> Following
             </span>
-            <span className={clsx('font-semibold text-md', {
+            <span className={clsx('font-semibold text-md dark:text-dark-6', {
               'text-dark-5': type == 'normal',
               'text-dark-6': type == 'dark',
             })}>
-              <span className={clsx('font-bold mr-1', {
+              <span className={clsx('font-bold mr-1 dark:text-white', {
                 'text-black': type == 'normal',
                 'text-white': type == 'dark',
               })}>45</span> Followers

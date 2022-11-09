@@ -51,10 +51,10 @@ export function TabBar({ appearance = 'normal', itemSelected = 'Tweets' }: TabBa
   }
   return (
     <div className='flex'  >
-      < TabBarItem isSelected={isTweetsSelected} type={appearance}/>
-      < TabBarItem  isSelected={isTweetsRepliesSelected} itemText='Tweets & replies' type={appearance} />
-      < TabBarItem isSelected={isMediaSelected}  itemText='Media' type={appearance} />
-      < TabBarItem  isSelected={isLikesSelected} itemText='Likes' type={appearance} />
+      < TabBarItem isSelected={isTweetsSelected} type={appearance} />
+      < TabBarItem isSelected={isTweetsRepliesSelected} itemText='Tweets & replies' type={appearance} />
+      < TabBarItem isSelected={isMediaSelected} itemText='Media' type={appearance} />
+      < TabBarItem isSelected={isLikesSelected} itemText='Likes' type={appearance} />
 
     </div >
   )

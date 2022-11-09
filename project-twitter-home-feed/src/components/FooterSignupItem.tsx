@@ -15,7 +15,7 @@ export function FooterSignupItem({ type = 'normal', itemText = "About" }: Footer
   return (
 
  
-      <li className={clsx('font-sans font-400  text-sxs list-none mr-5   cursor-pointer transition-all hover:text-primary-blue ', {
+      <li className={clsx('font-sans font-400  text-sxs list-none mr-5   cursor-pointer transition-all hover:text-primary-blue dark:text-white ', {
         'text-black': type == 'normal',
         'text-white': type == 'dark',
       })}  >

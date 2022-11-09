@@ -21,7 +21,7 @@ export function SignupPage({ type = 'normal' }: SignupPageProps) {
 
 
   return (
-    <body className={clsx('w-full  ', {
+    <body className={clsx('w-full dark:bg-black ', {
       'bg-white': type === 'normal',
       'bg-black': type === 'dark',
 
@@ -32,17 +32,17 @@ export function SignupPage({ type = 'normal' }: SignupPageProps) {
         <div style={{ backgroundImage: `url(${background})` }} className='h-screen bg-no-repeat w-1/2' > </div>
         <section className='ml-9' >
 
-          <TwitterLogo weight="fill" className={clsx('w-12 h-10 cursor-pointer hover:text-dark-4 transition-all mb-14', {
+          <TwitterLogo weight="fill" className={clsx('w-12 h-10 cursor-pointer hover:text-dark-4 transition-all mb-14 dark:text-white', {
             'text-primary-blue': type === 'normal',
             'text-white': type === 'dark',
           })} />
 
           <section className='h-48 flex flex-col justify-between mb-8'>
-            <h1 className={clsx('text-enormous font-900 ', {
+            <h1 className={clsx('text-enormous font-900 dark:text-white', {
               'text-black': type === 'normal',
               'text-white': type === 'dark',
             })} >Happening now</h1>
-            <h2 className={clsx('text-sxlg font-900 ', {
+            <h2 className={clsx('text-sxlg font-900 dark:text-white', {
               'text-black': type === 'normal',
               'text-white': type === 'dark',
             })}>Join Twitter today</h2>
@@ -56,14 +56,14 @@ export function SignupPage({ type = 'normal' }: SignupPageProps) {
           </div>
 
           <div className='h-20 flex flex-col justify-between mt-6'>
-            <article className={clsx('font-sans font-400 text-xs w-96 ', {
+            <article className={clsx('font-sans font-400 text-xs w-96 dark:text-white ', {
               'text-black': type === 'normal',
               'text-white': type === 'dark',
             })}>
               By singing up you agree to the <span className='font-sans font-400 text-xs text-primary-blue transition-all hover:text-dark-6 cursor-pointer'>Terms of Service</span> and <span className='font-sans font-400 text-xs text-primary-blue transition-all hover:text-dark-6 cursor-pointer'>Privacy Policy</span>, including <span className='font-sans font-400 text-xs text-primary-blue transition-all hover:text-dark-6 cursor-pointer'>Cookie Use</span>.
             </article>
 
-            <article className={clsx('font-sans font-400 text-xs', {
+            <article className={clsx('font-sans font-400 text-xs dark:text-white', {
               'text-black': type === 'normal',
               'text-white': type === 'dark',
             })}>

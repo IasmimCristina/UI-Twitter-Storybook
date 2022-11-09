@@ -13,7 +13,7 @@ export function TermsOfService({ type = 'normal' }: TermsOfServiceProps) {
 
   return (
 
-    <span className={clsx('text-sxs h-9   leading-4   pr-16 font-semibold ', {
+    <span className={clsx('text-sxs h-9   leading-4   pr-16 font-semibold dark:text-dark-6 ', {
       'text-dark-5': type === 'normal',
       'text-dark-6': type === 'dark',
 

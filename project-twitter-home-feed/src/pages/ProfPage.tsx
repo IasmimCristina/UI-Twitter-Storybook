@@ -36,7 +36,7 @@ export function ProfilePageComplete() {
           </div>
         </div>
 
-        <div className='flex flex-col gap-4 items-center  px-14 py-3'>
+        <div className='flex flex-col gap-6 items-center  px-14 py-3'>
           <SearchBar />
           <Follow />
           <News />

@@ -42,12 +42,10 @@ export function SignupButtons({ type = 'normal', buttonType = 'PhoneEmail'  }: S
   }
 
   return (
-    <button className={clsx('bg-white rounded-full border  w-403px h-16 font-semibold font-sans  text-xlg box-border  hover:border-4 hover:font-bold  transition-all flex items-center justify-center', {
-      'border-dark-7': type == 'normal',
-      'border-dark-4': type == 'dark',
+    <button className={clsx('bg-white rounded-full border  w-403px h-16 font-semibold font-sans  text-xlg box-border  hover:border-4 hover:font-bold  transition-all flex items-center justify-center dark:border-dark-4 dark:text-dark-4', {
 
-      'text-black': type == 'normal',
-      'text-dark-4': type == 'dark',
+      'border-dark-7 text-black': type == 'normal',
+      'border-dark-4 text-dark-4': type == 'dark',     
     
     })} >
       {buttonContent.icon}

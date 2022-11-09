@@ -17,11 +17,11 @@ export function Footer({ type = 'normal' }: FooterProps) {
       <div className="flex justify-between  items-center p-2">
 
         <section className="flex flex-col ml-72">
-          <span className={clsx("  text-sxlg font-sans font-900 ", {
+          <span className={clsx("  text-sxlg font-sans font-900 dark:text-black ", {
             'text-black': type === 'dark',
             'text-white': type === 'normal',
           })} >Don't miss what's happening</span>
-          <span className={clsx("text-md font-400 ", {
+          <span className={clsx("text-md font-400 dark:text-black", {
             'text-black': type === 'dark',
             'text-white': type === 'normal',
 

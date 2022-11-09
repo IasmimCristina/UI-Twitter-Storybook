@@ -1,21 +1,21 @@
 .scrollbar::-webkit-scrollbar {
-  width: .5rem;
+  width: .3rem;
   height: 1rem;
 }
 
 .scrollbar::-webkit-scrollbar-track {
   border-radius: 100vh;
-  background: #edfdff;
+  background: #edfdff00;
 }
 
 .scrollbar::-webkit-scrollbar-thumb {
-  background: #b2c8e2;
+  background: #4a5a6d;
   border-radius: 100vh;
   border: 1px solid #ffffff88;
 }
 
 .scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #00136685;
+  background: #173558;
 }
 
 @tailwind base;

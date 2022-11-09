@@ -56,13 +56,13 @@ const [typePage, setTypePage] = useState();
 
   return (
 
-    <div className="  flex  flex-col h-2/3  overflow-hidden  ">
+    <div className="  flex  flex-col h-2/3  overflow-hidden  bg-white dark:bg-black ">
       <div className='grid grid-cols-4 '>
         <div className="flex justify-center">
           <SideMenu menuItemSelected={'Home'} />
         </div>
         <div className='col-span-2 px-16 main-section-tweets scrollbar overflow-y-auto  h-screen' >
-          <div className="border-x border-dark-7">
+          <div className="border-x border-dark-7 dark:border-dark-4">
             <div className="flex flex-col gap-8 ">
               <Header />
               <Post />
@@ -73,7 +73,7 @@ const [typePage, setTypePage] = useState();
           </div>
         </div>
 
-        <div className='flex flex-col gap-4 items-center  px-14 py-3'>
+        <div className='flex flex-col gap-6 items-center  px-14 py-3'>
           <SearchBar />
           <News />
           <Follow />

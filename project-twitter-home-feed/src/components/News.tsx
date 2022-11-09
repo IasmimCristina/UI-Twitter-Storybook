@@ -28,35 +28,35 @@ export function News({ type = 'normal', }: NewsProps) {
 
 
   return (
-    <div className={clsx('h-460px w-360px rounded-lg ', {
+    <div className={clsx('h-460px w-360px rounded-lg dark:bg-dark-2', {
 
       'bg-dark-8': type === 'normal',
       'bg-dark-2': type === 'dark',
     })}>
-      <h2 className={clsx('ml-4 font-sans font-bold text-xlg', {
+      <h2 className={clsx('ml-4 font-sans font-bold text-xlg dark:text-white', {
         'text-black': type === 'normal',
         'text-white': type === 'dark',
       })}>What's happening</h2>
 
       <div className="h-96">
-        <div className={clsx(' h-1/3 border-t flex flex-row p-2 items-center justify-around   cursor-pointer transition-all', {
-  'hover:bg-dark-7 border-dark-7': type === 'normal',
-  'hover:bg-dark-4 border-dark-4': type === 'dark',
+        <div className={clsx(' h-1/3 border-t flex flex-row p-2 items-center justify-around   cursor-pointer transition-all dark:hover:bg-dark-4 dark:border-dark-4', {
+          'hover:bg-dark-7 border-dark-7': type === 'normal',
+          'hover:bg-dark-4 border-dark-4': type === 'dark',
 
         })}>
           <div className=" w-60">
-            <span className={clsx('font-sans font-semibold text-xs', {
+            <span className={clsx('font-sans font-semibold text-xs dark:text-dark-6', {
               'text-dark-5': type === 'normal',
               'text-dark-6': type === 'dark',
             })}>COVID <span>. Last night</span></span>
-            <article className={clsx('font-sans font-bold text-sm', {
+            <article className={clsx('font-sans font-bold text-sm dark:text-white', {
               'text-black': type === 'normal',
               'text-white': type === 'dark',
             })}>
               England’s Chief Medical Officer says the UK is at the most dangerous time of the pandemic
             </article>
 
-            <span className={clsx('font-sans font-semibold text-xs ', {
+            <span className={clsx('font-sans font-semibold text-xs dark:text-dark-6', {
               'text-dark-5': type === 'normal',
               'text-dark-6': type === 'dark',
             })}>Trending with <span className={clsx(' text-primary-blue', {
@@ -70,26 +70,25 @@ export function News({ type = 'normal', }: NewsProps) {
 
 
 
-        <div className={clsx('h-1/3 border-t flex flex-row p-2 items-center justify-around transition-all cursor-pointer', {
-          
+        <div className={clsx('h-1/3 border-t flex flex-row p-2 items-center justify-around transition-all cursor-pointer dark:hover:bg-dark-4 dark:border-dark-4', {
 
           'hover:bg-dark-7 border-dark-7': type === 'normal',
           'hover:bg-dark-4 border-dark-4': type === 'dark',
 
         })}>
           <div className=" w-60">
-            <span className={clsx('font-sans font-semibold text-xs', {
+            <span className={clsx('font-sans font-semibold text-xs dark:text-dark-6', {
               'text-dark-5': type === 'normal',
               'text-dark-6': type === 'dark',
             })}>India <span>. 6h ago</span></span>
-            <article className={clsx('font-sans font-bold text-sm', {
+            <article className={clsx('font-sans font-bold text-sm dark:text-white', {
               'text-black': type === 'normal',
               'text-white': type === 'dark',
             })}>
               India vs Australia: India hold on to earn a draw on Day 5 in Sydney Test
             </article>
 
-            <span className={clsx('font-sans font-semibold text-xs ', {
+            <span className={clsx('font-sans font-semibold text-xs dark:text-dark-6', {
               'text-dark-5': type === 'normal',
               'text-dark-6': type === 'dark',
             })}>Trending with <span className={clsx(' text-primary-blue', {
@@ -101,25 +100,25 @@ export function News({ type = 'normal', }: NewsProps) {
 
         </div>
 
-        <div className={clsx('h-1/3 border-t border-b flex flex-row p-2 items-center justify-around transition-all cursor-pointer', {
-     'hover:bg-dark-7 border-dark-7': type === 'normal',
-     'hover:bg-dark-4 border-dark-4': type === 'dark',
+        <div className={clsx('h-1/3 border-t border-b flex flex-row p-2 items-center justify-around transition-all cursor-pointer dark:hover:bg-dark-4 dark:border-dark-4', {
+          'hover:bg-dark-7 border-dark-7': type === 'normal',
+          'hover:bg-dark-4 border-dark-4': type === 'dark',
 
 
         })}>
           <div className=" w-60">
-            <span className={clsx('font-sans font-semibold text-xs', {
+            <span className={clsx('font-sans font-semibold text-xs dark:text-dark-6', {
               'text-dark-5': type === 'normal',
               'text-dark-6': type === 'dark',
             })}>US news <span>. 1h ago</span></span>
-            <article className={clsx('font-sans font-bold text-sm', {
+            <article className={clsx('font-sans font-bold text-sm dark:text-white', {
               'text-black': type === 'normal',
               'text-white': type === 'dark',
             })}>
               Parler may go offline following suspensions by Amazon, Apple and Google
             </article>
 
-            <span className={clsx('font-sans font-semibold text-xs ', {
+            <span className={clsx('font-sans font-semibold text-xs  dark:text-dark-6', {
               'text-dark-5': type === 'normal',
               'text-dark-6': type === 'dark',
             })}>Trending with <span className={clsx(' text-primary-blue', {
