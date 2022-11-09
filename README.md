@@ -49,8 +49,11 @@ Storybook das telas principais Twitter com suas versões light e dark.
 * Para executar o projeto, com as suas respectivas páginas criadas, digite o seguinte comando na pasta principal do projeto:
 
                npm run dev
+               
 ou
-               npm run start
+
+
+              npm run start
                
 
 ### 📜Contas criadas para testes:
