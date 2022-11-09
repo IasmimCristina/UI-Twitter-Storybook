@@ -40,11 +40,8 @@ export function News({ type = 'normal', }: NewsProps) {
 
       <div className="h-96">
         <div className={clsx(' h-1/3 border-t flex flex-row p-2 items-center justify-around   cursor-pointer transition-all', {
-          'border-black': type === 'normal',
-          'border-white': type === 'dark',
-
-          'hover:bg-dark-7': type === 'normal',
-          'hover:bg-dark-4': type === 'dark',
+  'hover:bg-dark-7 border-dark-7': type === 'normal',
+  'hover:bg-dark-4 border-dark-4': type === 'dark',
 
         })}>
           <div className=" w-60">
@@ -74,11 +71,10 @@ export function News({ type = 'normal', }: NewsProps) {
 
 
         <div className={clsx('h-1/3 border-t flex flex-row p-2 items-center justify-around transition-all cursor-pointer', {
-          'border-black': type === 'normal',
-          'border-white': type === 'dark',
+          
 
-          'hover:bg-dark-7': type === 'normal',
-          'hover:bg-dark-4': type === 'dark',
+          'hover:bg-dark-7 border-dark-7': type === 'normal',
+          'hover:bg-dark-4 border-dark-4': type === 'dark',
 
         })}>
           <div className=" w-60">
@@ -106,11 +102,8 @@ export function News({ type = 'normal', }: NewsProps) {
         </div>
 
         <div className={clsx('h-1/3 border-t border-b flex flex-row p-2 items-center justify-around transition-all cursor-pointer', {
-          'border-black': type === 'normal',
-          'border-white': type === 'dark',
-
-          'hover:bg-dark-7': type === 'normal',
-          'hover:bg-dark-4': type === 'dark',
+     'hover:bg-dark-7 border-dark-7': type === 'normal',
+     'hover:bg-dark-4 border-dark-4': type === 'dark',
 
 
         })}>

@@ -22,7 +22,7 @@ export interface TweetProps {
 export function Tweet({ type = 'normal', textPost = "Wait, no. Hold on I need at least a few minutes!", }: TweetProps) {
 
   return (
-    <div className=' p-4 '>
+    <div className=' p-4  border-b-dark-7 border-b '>
       <div className="flex flex-row gap-5">
         <img className=
           'rounded-full bg-white text-sxs text-primary-blue border-0 h-12 w-12' src={images.profile} alt="User">
@@ -50,7 +50,7 @@ export function Tweet({ type = 'normal', textPost = "Wait, no. Hold on I need at
       </div>
 
       <div className="ml-16 mt-2 ">
-        <img className=' rounded-lg mb-3' src={images.post} alt="Random example of an astrounaut floating." />
+        <img className=' w-full rounded-lg mb-3' src={images.post} alt="Random example of an astrounaut floating." />
         <div className='flex flex-row gap-20 h-6'>
 
           <div className=" flex flex-row gap-3 items-center">

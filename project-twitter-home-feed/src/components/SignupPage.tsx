@@ -67,7 +67,7 @@ export function SignupPage({ type = 'normal' }: SignupPageProps) {
               'text-black': type === 'normal',
               'text-white': type === 'dark',
             })}>
-              Already have an account? <a href='' className='font-sans font-400 text-xs text-primary-blue transition-all hover:text-dark-6 cursor-pointer'>Log in</a>
+              Already have an account? <a href='login.html' className='font-sans font-400 text-xs text-primary-blue transition-all hover:text-dark-6 cursor-pointer'>Log in</a>
             </article>
           </div>
         </section>

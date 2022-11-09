@@ -10,10 +10,10 @@ export interface SpacerProps {
 export function Spacer({ type = 'normal' }: SpacerProps) {
 
   return (
-    <div className={clsx('w-2/5 h-3', {
+    <div className={clsx('w-full h-3', {
 
-      'bg-white': type === 'normal',
-      'bg-black': type === 'dark',
+      'bg-dark-7': type === 'normal',
+      'bg-dark-4': type === 'dark',
 
     })} >
      

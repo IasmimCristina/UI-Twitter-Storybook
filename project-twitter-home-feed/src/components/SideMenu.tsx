@@ -23,8 +23,8 @@ export function SideMenu({ type = 'normal', menuItemSelected = 'Home' }: SideMen
 
 
   return (
-    <div className='p-4 h-screen flex flex-col  justify-between'>
-      <div className="ml-10">
+    <div className='p-4 h-screen flex flex-col  justify-between ml-10'>
+      <div className="">
         <div className="ml-2">
           <TwitterLogo weight="fill" className={clsx(' h-7 w-6', {
             'text-primary-blue': type == 'normal',
@@ -219,14 +219,14 @@ export function SideMenu({ type = 'normal', menuItemSelected = 'Home' }: SideMen
         </div>
         <button className={
           clsx(
-            'mt-2 font-sans font-bold rounded-full transition-all border-2 focus:ring-4 ring-dark-5 py-3 px-24 text-white   bg-primary-blue hover:text-primary-blue  hover:bg-white  border-primary-blue',
+            'mt-2 font-sans font-bold rounded-full transition-all border-2 focus:ring-4 ring-dark-5 py-3 px-24 text-white   bg-primary-blue hover:text-primary-blue  hover:bg-transparent  border-primary-blue',
             {
             }
           )}>
           Tweet
         </button>
       </div>
-      <div className="flex flex-row gap-2  ">
+      <div className="flex flex-row gap-2   ">
 
         <div className="flex flex-row gap-2 w-64  justify-between items-center">
           <div className="flex flex-row gap-2">

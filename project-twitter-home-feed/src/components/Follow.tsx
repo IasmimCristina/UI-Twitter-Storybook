@@ -28,7 +28,7 @@ export function Follow({ type = 'normal', }: FollowProps) {
 
 
   return (
-    <div className={clsx('h-60 w-96 rounded-lg ', {
+    <div className={clsx('h-60 w-360px rounded-lg ', {
 
       'bg-dark-8': type === 'normal',
       'bg-dark-2': type === 'dark',
@@ -40,11 +40,8 @@ export function Follow({ type = 'normal', }: FollowProps) {
 
       <div className="h-40">
         <div className={clsx(' h-1/2 border-t  flex flex-row p-2 items-center justify-around   cursor-pointer transition-all', {
-          'border-black': type === 'normal',
-          'border-white': type === 'dark',
-
-          'hover:bg-dark-7': type === 'normal',
-          'hover:bg-dark-4': type === 'dark',
+          'hover:bg-dark-7 border-dark-7': type === 'normal',
+          'hover:bg-dark-4 border-dark-4': type === 'dark',
 
         })}>
 
@@ -62,14 +59,8 @@ export function Follow({ type = 'normal', }: FollowProps) {
                 })}>@biscuttu</span>
               </div>
             </div>
-            <button className={
-              clsx(
-                'font-sans font-bold rounded-full transition-all border focus:ring-4 ring-dark-5  h-8  w-20 text-sm text-primary-blue    bg-transparent   border-primary-blue hover:text-white  hover:bg-primary-blue ',
-                {
-
-                }
-
-              )}>
+            <button className=
+              'font-sans font-bold rounded-full transition-all border focus:ring-4 ring-dark-5  h-8  w-20 text-sm text-primary-blue    bg-transparent   border-primary-blue hover:text-white  hover:bg-primary-blue'>
               Follow
             </button>
 
@@ -83,11 +74,8 @@ export function Follow({ type = 'normal', }: FollowProps) {
 
 
         <div className={clsx(' h-1/2 border-t border-b flex flex-row p-2 items-center justify-around   cursor-pointer transition-all', {
-          'border-black': type === 'normal',
-          'border-white': type === 'dark',
-
-          'hover:bg-dark-7': type === 'normal',
-          'hover:bg-dark-4': type === 'dark',
+          'hover:bg-dark-7 border-dark-7': type === 'normal',
+          'hover:bg-dark-4 border-dark-4': type === 'dark',
 
         })}>
 
@@ -105,14 +93,8 @@ export function Follow({ type = 'normal', }: FollowProps) {
                 })}>@biscuttu</span>
               </div>
             </div>
-            <button className={
-              clsx(
-                'font-sans font-bold rounded-full transition-all border focus:ring-4 ring-dark-5 h-8   w-20 text-sm text-primary-blue   bg-transparent  border-primary-blue hover:text-white  hover:bg-primary-blue ',
-                {
-
-                }
-
-              )}>
+            <button className=
+                'font-sans font-bold rounded-full transition-all border focus:ring-4 ring-dark-5 h-8   w-20 text-sm text-primary-blue   bg-transparent  border-primary-blue hover:text-white  hover:bg-primary-blue '>
               Follow
             </button>
 

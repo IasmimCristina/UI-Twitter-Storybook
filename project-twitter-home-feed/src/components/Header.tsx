@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { ReactNode, useState } from 'react';
 import { clsx } from 'clsx';
 import { Sparkle, ArrowLeft } from "phosphor-react";
 
@@ -33,8 +33,14 @@ export function Header({ type = 'normal', page = 'Home' }: HeaderProps) {
       icon: '',
     };
   }
-
-
+  const [typeChanged, setTypeChanged] = useState('');
+  const toggleLightDark = () => {
+    if (type === 'normal') {
+      type = 'dark';
+    } else {
+      type = 'normal';
+    }
+  }
 
   return (
     <header className='h-4  p-2' >
@@ -54,7 +60,7 @@ export function Header({ type = 'normal', page = 'Home' }: HeaderProps) {
           </div>
         </div>
 
-        <div className={clsx(' cursor-pointer h-8 text-primary-blue  flex  content-center', {
+        <div onClick={() => toggleLightDark()} className={clsx(' cursor-pointer h-8 text-primary-blue  flex  content-center', {
 
         })}>
           <Sparkle className={clsx('transition-all h-8 w-6  hover:h-9 hover:w-7', {
@@ -67,9 +73,9 @@ export function Header({ type = 'normal', page = 'Home' }: HeaderProps) {
       </div>
       <hr className={clsx('mt-1', {
 
-        'text-white': type === 'normal',
+        'text-dark-7': type === 'normal',
 
-        'text-black': type === 'dark',
+        'text-dark-4': type === 'dark',
 
 
       })} />

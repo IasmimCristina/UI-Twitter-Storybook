@@ -22,11 +22,11 @@ export interface ProfileAreaProps {
 export function ProfileArea({ type = 'normal', description = '💀Writer✨✨ || Singer🤎🤎 || Psychologist' }: ProfileAreaProps) {
 
   return (
-    <div className='max-w-xl'>
+    <div className='w-full '>
 
-      <div className=' relative'  >
-        <img className='  max-w-xl ' src={images.wallpaper} alt="Wallpaper example." />
-        <img className='h-36 w-36 rounded-full  text-sxs border-4  absolute top-2/4  left-3' src={images.profile} alt="User" />
+      <div className='relative  '  >
+        <img className=' w-full    ' src={images.wallpaper} alt="Wallpaper example." />
+        <img className='h-44 w-44 rounded-full  text-sxs border-4  absolute bottom-2 top-36 left-3' src={images.profile} alt="User" />
       </div>
       <div className="flex  justify-end">
         <button className='text-sm font-sans font-bold rounded-full transition-all border-2 focus:ring-4 ring-dark-5 text-primary-blue  w-32 h-10  border-primary-blue hover:text-white  hover:bg-primary-blue mt-3 mr-6' >Edit Profile</button>
