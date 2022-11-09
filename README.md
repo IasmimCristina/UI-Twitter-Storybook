@@ -4,36 +4,56 @@
 
 ***
 
-<h1 align="center" color="blue" > Projeto 🐦Twitter - Tela Home(Feed) Storybook🐦 </h1>
+<h1 align="center" color="blue" > Projeto 🐦Twitter - Telas principais - Storybook🐦 </h1>
 
 <div align="center">
 <img  src="https://user-images.githubusercontent.com/100351576/198033565-699f08f4-1cd9-4c63-90ce-f0bc7c1e196f.jpg">
+
+
+
+
+
 </img>
 </div>
 
  <p align="center" color= "blue" >
-Storybook da tela Home do Twitter com suas versões light e dark.
+Storybook das telas principais Twitter com suas versões light e dark.
 </p>
 
 <h3 align="center" color="darkred">
-✨ Página Home e sua variação ✨ 
+✨ Página Home, Profile,Sign Up, Login e suas variações ✨ 
 </h3>
 <div align="center" color="darkred">
 
 ![Light](https://user-images.githubusercontent.com/100351576/198385306-75c8d0ca-8f83-4c7b-a98e-6f844e7f0aab.jpg)
 ![Dark](https://user-images.githubusercontent.com/100351576/198385303-4b86fb20-9d3e-4101-9c2b-30d1d03cedc5.jpg)
 
+<img  src="https://user-images.githubusercontent.com/100351576/200954306-100a52be-f288-4edc-9145-435b1176ab2e.jpg">
+
+<img  src="https://user-images.githubusercontent.com/100351576/200954394-250ee80f-0300-49b3-b1b6-77cfcf2d1a47.jpg">
+
+<img  src="https://user-images.githubusercontent.com/100351576/200954504-6fcd7ca1-47e7-4b67-b8d6-f79cdd36c295.jpg">
+
+<img  src="https://user-images.githubusercontent.com/100351576/200954600-2deec5d6-84de-4b6c-a6c2-bb559c2ebb5f.jpg">
+
 </div>
 
 ## 📖 Status do projeto:
 * Incompleto. 🕁
-* Apenas o Storybook feito. 
-* Para iniciá-lo precisa-se de uma **versão 16** do Node.
+* Apenas o Storybook  e as páginas feitas. 
+* Para iniciar o storybook precisa-se de uma **versão 16** do Node.
 * Entre na pasta principal do projeto e digite o seguinte comando:
 
                npm run storybook
 
-### Contas criadas para testes:
+* Para executar o projeto, com as suas respectivas páginas criadas, digite o seguinte comando na pasta principal do projeto:
+
+               npm run dev
+ou
+               npm run start
+               
+
+### 📜Contas criadas para testes:
 - [x] Conta 01 👤
 - **E-mail:** ias@example.com
 - **Senha:** 1234
@@ -47,11 +67,19 @@ Storybook da tela Home do Twitter com suas versões light e dark.
 - **Senha:** cookie
 
 ## Requisitos 👩‍💻 
+--------> **Fase 01** 🧠
  - [X]  Componentes no Storybook;
  - [x]  Seguir cores, tamanhos e funcionalidadesBotões devem levar pra página 404;
  - [x]  Fotos podem ser aleatorias;
  - [x]  A  pagina deve ter scroll na coluna do meio (aparecer mais 2 ou 3 publicações);
  - [x]  380 coracteres para post de text e fucionalidade de inserir fotosIndicativo de tempo da postagem.
+ 
+ ***
+--------> **Fase 02** 👩‍💻
+- Primeira página: home.
+- Um popup aparecerá perguntando se o usuario irá queerer se logar ou não sempre que ele quiser interagir com a página e na primeira vez que ela for carregada.
+- Estando logado, o usuário deve pode rcomentar, receber curtidas, e seus novos posts devems e rslavos no Local Sotagre. 
+- O tempo das postagens deve ser dinâmico.
 
 ***
  <div align="center">
@@ -80,10 +108,6 @@ Figma: <a href="https://www.figma.com/file/E0J4sPihtdgIMI2Z4BOmLv/UI-Twitter-Web
  
 # ✨ Tecnologias contidas no projeto ✨ 
 
-
-
- 
- 
   
   <img height= "100px" width="100px"
      src="https://user-images.githubusercontent.com/100351576/198030791-fff26edc-106f-4536-bf51-63fcd3a7a3d9.svg"
@@ -133,7 +157,8 @@ Figma: <a href="https://www.figma.com/file/E0J4sPihtdgIMI2Z4BOmLv/UI-Twitter-Web
 *** 
  
  <p color="red" align="center">
-Entrega: Terça-feira, 1º de novembro. Até as 12h.
+Entrega 01: terça-feira, 1º de novembro. Até as 12h.
+Entrega 02: quinta-feira, 10 de novembro. Até as 12h.
 </p>
 
 
