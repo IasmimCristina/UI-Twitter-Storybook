@@ -1,5 +1,6 @@
 import { clsx } from 'clsx';
 import { House, HashStraight, Bell, EnvelopeSimple, ListChecks, BookmarkSimple, UserCircle, DotsThreeCircle, TwitterLogo, DotsThreeOutline } from "phosphor-react";
+import { Link } from 'react-router-dom';
 
 
 import imageFile from '../static/Profile.svg';
@@ -39,11 +40,13 @@ export function SideMenu({ type = 'normal', menuItemSelected = 'Home', page = 'p
             })}>@biscuttu</span>
           </div>
         </div>
-        <DotsThreeOutline className={clsx(' transition-all w-12 h-4 hover:w-14 hover:h-6 cursor-pointer hover:text-primary-blue dark:text-white dark:hover:text-primary-blue', {
 
-          'text-black ': type == 'normal',
-          'text-white': type == 'dark',
-        })} />
+        <Link to="/profile">
+          <DotsThreeOutline className={clsx(' transition-all w-12 h-4 hover:w-14 hover:h-6 cursor-pointer hover:text-primary-blue dark:text-white dark:hover:text-primary-blue', {
+            'text-black ': type == 'normal',
+            'text-white': type == 'dark',
+          })} />
+        </Link>
       </div>
     }
   } else {
@@ -63,190 +66,178 @@ export function SideMenu({ type = 'normal', menuItemSelected = 'Home', page = 'p
           })} />
 
 
-          <div className={clsx(`flex justify-start  gap-4 h-16 w-64  items-center cursor-pointer transition-all hover:border-box hover:border-2 dark:border-white`, {
-            'border-primary-blue': type == 'normal',
-            'border-white': type == 'dark',
+          <Link to="/home">
+            <div className={clsx(`flex justify-start  gap-4 h-16 w-64  items-center cursor-pointer transition-all hover:border-box hover:border-2 dark:border-white`, {
+              'border-primary-blue': type == 'normal',
+              'border-white': type == 'dark',
+            })}>
+              <House className={clsx(' text-lg ml-2 ', {
+                'text-primary-blue': menuItemSelected === 'Home',
+                'text-black dark:text-white ': type == 'normal' && menuItemSelected != 'Home',
+                'text-white': type == 'dark' && menuItemSelected != 'Home',
+              })} />
+              <span className={clsx(`font-sans font-bold text-lg text-primary-blue `, {
+                'text-primary-blue': menuItemSelected === 'Home',
+                'text-black dark:text-white': type == 'normal' && menuItemSelected != 'Home',
+                'text-white': type == 'dark' && menuItemSelected != 'Home',
+              })} >
+                Home
+              </span>
+            </div>
+          </Link>
+
+          <Link to="/error404">
+            <div className={clsx(`flex justify-start  gap-4 h-16 w-64  items-center cursor-pointer transition-all hover:border-box hover:border-2 dark:border-white `, {
+              'border-primary-blue': type == 'normal',
+              'border-white': type == 'dark',
+            })}>
+              <HashStraight className={clsx(`text-lg   ml-2 `, {
+                'text-primary-blue': menuItemSelected === 'Explore',
+                'text-black  dark:text-white': type == 'normal' && menuItemSelected != 'Explore',
+                'text-white': type == 'dark' && menuItemSelected != 'Explore',
+              })} />
+              <span className={clsx(`font-sans font-bold text-lg  `, {
+                'text-primary-blue': menuItemSelected === 'Explore',
+                'text-black dark:text-white': type == 'normal' && menuItemSelected != 'Explore',
+                'text-white': type == 'dark' && menuItemSelected != 'Explore',
+              })} >
+                Explore
+              </span>
+            </div>
+          </Link>
+
+
+          <Link to="/error404">
+            <div className={clsx(`flex justify-start  gap-4 h-16 w-64  items-center cursor-pointer transition-all hover:border-box hover:border-2  dark:border-white`, {
+              'border-primary-blue': type == 'normal',
+              'border-white': type == 'dark',
+            })
+            }>
+              <Bell className={clsx(`text-lg  ml-2 `, {
+                'text-primary-blue': menuItemSelected === 'Notifications',
+                'text-black dark:text-white': type == 'normal' && menuItemSelected != 'Notifications',
+                'text-white': type == 'dark' && menuItemSelected != 'Notifications',
+              })} />
+              <span className={clsx(`font-sans font-bold text-lg  `, {
+                'text-primary-blue': menuItemSelected === 'Notifications',
+                'text-black dark:text-white': type == 'normal' && menuItemSelected != 'Notifications',
+                'text-white': type == 'dark' && menuItemSelected != 'Notifications',
+              })} >
+                Notifications
+              </span>
+            </div>
+          </Link>
 
 
 
+          <Link to="/error404">
+            <div className={clsx(`flex justify-start  gap-4 h-16 w-64  items-center cursor-pointer transition-all hover:border-box hover:border-2 dark:border-white`, {
+              'border-primary-blue': type == 'normal',
+              'border-white': type == 'dark',
+            })
+            }>
+              <EnvelopeSimple className={clsx(`text-lg   ml-2`, {
+                'text-primary-blue': menuItemSelected === 'Messages',
+                'text-black dark:text-white': type == 'normal' && menuItemSelected != 'Messages',
+                'text-white': type == 'dark' && menuItemSelected != 'Messages',
+              })} />
+              <span className={clsx(`font-sans font-bold text-lg  `, {
+                'text-primary-blue': menuItemSelected === 'Messages',
+                'text-black dark:text-white': type == 'normal' && menuItemSelected != 'Messages',
+                'text-white': type == 'dark' && menuItemSelected != 'Messages',
+              })} >
+                Messages
+              </span>
+            </div>
+          </Link>
 
-          })}>
-            <House className={clsx(' text-lg ml-2 ', {
 
-              'text-primary-blue': menuItemSelected === 'Home',
+          <Link to="/error404">
+            <div className={clsx(`flex justify-start  gap-4 h-16 w-64  items-center cursor-pointer transition-all hover:border-box hover:border-2 dark:border-white`, {
+              'border-primary-blue': type == 'normal',
+              'border-white': type == 'dark',
+            })
+            }>
+              <BookmarkSimple className={clsx(`text-lg   ml-2`, {
+                'text-primary-blue': menuItemSelected === 'Bookmarks',
+                'text-black dark:text-white': type == 'normal' && menuItemSelected != 'Bookmarks',
+                'text-white': type == 'dark' && menuItemSelected != 'Bookmarks',
+              })} />
+              <span className={clsx(`font-sans font-bold text-lg  `, {
+                'text-primary-blue': menuItemSelected === 'Bookmarks',
+                'text-black dark:text-white': type == 'normal' && menuItemSelected != 'Bookmarks',
+                'text-white': type == 'dark' && menuItemSelected != 'Bookmarks',
+              })} >
+                Bookmarks
+              </span>
+            </div>
+          </Link>
 
-              'text-black dark:text-white ': type == 'normal' && menuItemSelected != 'Home',
-              'text-white': type == 'dark' && menuItemSelected != 'Home',
+          <Link to="/error404">
+            <div className={clsx(`flex justify-start  gap-4 h-16 w-64  items-center cursor-pointer transition-all hover:border-box hover:border-2 dark:border-white`, {
+              'border-primary-blue': type == 'normal',
+              'border-white': type == 'dark',
+            })
+            }>
+              <ListChecks className={clsx(`text-lg   ml-2`, {
+                'text-primary-blue': menuItemSelected === 'Lists',
+                'text-black dark:text-white': type == 'normal' && menuItemSelected != 'Lists',
+                'text-white': type == 'dark' && menuItemSelected != 'Lists',
+              })} />
+              <span className={clsx(`font-sans font-bold text-lg  `, {
+                'text-primary-blue': menuItemSelected === 'Lists',
+                'text-black dark:text-white': type == 'normal' && menuItemSelected != 'Lists',
+                'text-white ': type == 'dark' && menuItemSelected != 'Lists',
+              })} >
+                Lists
+              </span>
+            </div>
+          </Link>
 
 
-            })} />
-            <span className={clsx(`font-sans font-bold text-lg text-primary-blue `, {
 
-              'text-primary-blue': menuItemSelected === 'Home',
+          <Link to="/profile">
+            <div className={clsx(`flex justify-start  gap-4 h-16 w-64  items-center cursor-pointer transition-all hover:border-box hover:border-2 dark:border-white `, {
+              'border-primary-blue': type == 'normal',
+              'border-white': type == 'dark',
+            })
+            }>
+              <UserCircle className={clsx(`text-lg   ml-2`, {
+                'text-primary-blue': menuItemSelected === 'Profile',
+                'text-black dark:text-white': type == 'normal' && menuItemSelected != 'Profile',
+                'text-white': type == 'dark' && menuItemSelected != 'Profile',
+              })} />
+              <span className={clsx(`font-sans font-bold text-lg  `, {
+                'text-primary-blue': menuItemSelected === 'Profile',
+                'text-black dark:text-white': type == 'normal' && menuItemSelected != 'Profile',
+                'text-white': type == 'dark' && menuItemSelected != 'Profile',
+              })} >
+                Profile
+              </span>
+            </div>
+          </Link>
 
-              'text-black dark:text-white': type == 'normal' && menuItemSelected != 'Home',
-              'text-white': type == 'dark' && menuItemSelected != 'Home',
+          <Link to="/error404">
+            <div className={clsx(`flex justify-start  gap-4 h-16 w-64  items-center cursor-pointer transition-all hover:border-box hover:border-2 dark:border-white `, {
+              'border-primary-blue': type == 'normal',
+              'border-white': type == 'dark',
+            })
+            }>
+              <DotsThreeCircle className={clsx(`text-lg   ml-2`, {
+                'text-primary-blue': menuItemSelected === 'More',
+                'text-black dark:text-white': type == 'normal' && menuItemSelected != 'More',
+                'text-white': type == 'dark' && menuItemSelected != 'More',
+              })} />
+              <span className={clsx(`font-sans font-bold text-lg  `, {
+                'text-primary-blue': menuItemSelected === 'More',
+                'text-black dark:text-white': type == 'normal' && menuItemSelected != 'More',
+                'text-white': type == 'dark' && menuItemSelected != 'More',
+              })} >
+                More
+              </span>
+            </div>
+          </Link>
 
-
-            })} >
-              Home
-            </span>
-          </div>
-
-          <div className={clsx(`flex justify-start  gap-4 h-16 w-64  items-center cursor-pointer transition-all hover:border-box hover:border-2 dark:border-white `, {
-            'border-primary-blue': type == 'normal',
-            'border-white': type == 'dark',
-
-          })}>
-
-            <HashStraight className={clsx(`text-lg   ml-2 `, {
-
-              'text-primary-blue': menuItemSelected === 'Explore',
-
-              'text-black  dark:text-white': type == 'normal' && menuItemSelected != 'Explore',
-              'text-white': type == 'dark' && menuItemSelected != 'Explore',
-            })} />
-            <span className={clsx(`font-sans font-bold text-lg  `, {
-              'text-primary-blue': menuItemSelected === 'Explore',
-
-              'text-black dark:text-white': type == 'normal' && menuItemSelected != 'Explore',
-              'text-white': type == 'dark' && menuItemSelected != 'Explore',
-            })} >
-              Explore
-            </span>
-          </div>
-          <div className={clsx(`flex justify-start  gap-4 h-16 w-64  items-center cursor-pointer transition-all hover:border-box hover:border-2  dark:border-white`, {
-            'border-primary-blue': type == 'normal',
-            'border-white': type == 'dark',
-
-          })
-
-          }>
-            <Bell className={clsx(`text-lg  ml-2 `, {
-              'text-primary-blue': menuItemSelected === 'Notifications',
-
-              'text-black dark:text-white': type == 'normal' && menuItemSelected != 'Notifications',
-              'text-white': type == 'dark' && menuItemSelected != 'Notifications',
-            })} />
-            <span className={clsx(`font-sans font-bold text-lg  `, {
-              'text-primary-blue': menuItemSelected === 'Notifications',
-
-              'text-black dark:text-white': type == 'normal' && menuItemSelected != 'Notifications',
-              'text-white': type == 'dark' && menuItemSelected != 'Notifications',
-            })} >
-              Notifications
-            </span>
-          </div>
-          <div className={clsx(`flex justify-start  gap-4 h-16 w-64  items-center cursor-pointer transition-all hover:border-box hover:border-2 dark:border-white`, {
-            'border-primary-blue': type == 'normal',
-            'border-white': type == 'dark',
-
-          })
-
-          }>
-            <EnvelopeSimple className={clsx(`text-lg   ml-2`, {
-              'text-primary-blue': menuItemSelected === 'Messages',
-
-              'text-black dark:text-white': type == 'normal' && menuItemSelected != 'Messages',
-              'text-white': type == 'dark' && menuItemSelected != 'Messages',
-            })} />
-            <span className={clsx(`font-sans font-bold text-lg  `, {
-              'text-primary-blue': menuItemSelected === 'Messages',
-
-              'text-black dark:text-white': type == 'normal' && menuItemSelected != 'Messages',
-              'text-white': type == 'dark' && menuItemSelected != 'Messages',
-            })} >
-              Messages
-            </span>
-          </div>
-          <div className={clsx(`flex justify-start  gap-4 h-16 w-64  items-center cursor-pointer transition-all hover:border-box hover:border-2 dark:border-white`, {
-            'border-primary-blue': type == 'normal',
-            'border-white': type == 'dark',
-
-          })
-
-          }>
-            <BookmarkSimple className={clsx(`text-lg   ml-2`, {
-              'text-primary-blue': menuItemSelected === 'Bookmarks',
-
-              'text-black dark:text-white': type == 'normal' && menuItemSelected != 'Bookmarks',
-              'text-white': type == 'dark' && menuItemSelected != 'Bookmarks',
-            })} />
-            <span className={clsx(`font-sans font-bold text-lg  `, {
-              'text-primary-blue': menuItemSelected === 'Bookmarks',
-
-              'text-black dark:text-white': type == 'normal' && menuItemSelected != 'Bookmarks',
-              'text-white': type == 'dark' && menuItemSelected != 'Bookmarks',
-            })} >
-              Bookmarks
-            </span>
-          </div>
-          <div className={clsx(`flex justify-start  gap-4 h-16 w-64  items-center cursor-pointer transition-all hover:border-box hover:border-2 dark:border-white`, {
-            'border-primary-blue': type == 'normal',
-            'border-white': type == 'dark',
-
-          })
-
-          }>
-            <ListChecks className={clsx(`text-lg   ml-2`, {
-              'text-primary-blue': menuItemSelected === 'Lists',
-
-              'text-black dark:text-white': type == 'normal' && menuItemSelected != 'Lists',
-              'text-white': type == 'dark' && menuItemSelected != 'Lists',
-            })} />
-            <span className={clsx(`font-sans font-bold text-lg  `, {
-              'text-primary-blue': menuItemSelected === 'Lists',
-
-              'text-black dark:text-white': type == 'normal' && menuItemSelected != 'Lists',
-              'text-white ': type == 'dark' && menuItemSelected != 'Lists',
-            })} >
-              Lists
-            </span>
-          </div>
-          <div className={clsx(`flex justify-start  gap-4 h-16 w-64  items-center cursor-pointer transition-all hover:border-box hover:border-2 dark:border-white `, {
-            'border-primary-blue': type == 'normal',
-            'border-white': type == 'dark',
-
-          })
-
-          }>
-            <UserCircle className={clsx(`text-lg   ml-2`, {
-              'text-primary-blue': menuItemSelected === 'Profile',
-
-              'text-black dark:text-white': type == 'normal' && menuItemSelected != 'Profile',
-              'text-white': type == 'dark' && menuItemSelected != 'Profile',
-            })} />
-            <span className={clsx(`font-sans font-bold text-lg  `, {
-              'text-primary-blue': menuItemSelected === 'Profile',
-
-              'text-black dark:text-white': type == 'normal' && menuItemSelected != 'Profile',
-              'text-white': type == 'dark' && menuItemSelected != 'Profile',
-            })} >
-              Profile
-            </span>
-          </div>
-          <div className={clsx(`flex justify-start  gap-4 h-16 w-64  items-center cursor-pointer transition-all hover:border-box hover:border-2 dark:border-white `, {
-            'border-primary-blue': type == 'normal',
-            'border-white': type == 'dark',
-
-          })
-
-          }>
-            <DotsThreeCircle className={clsx(`text-lg   ml-2`, {
-              'text-primary-blue': menuItemSelected === 'More',
-
-              'text-black dark:text-white': type == 'normal' && menuItemSelected != 'More',
-              'text-white': type == 'dark' && menuItemSelected != 'More',
-            })} />
-            <span className={clsx(`font-sans font-bold text-lg  `, {
-              'text-primary-blue': menuItemSelected === 'More',
-
-              'text-black dark:text-white': type == 'normal' && menuItemSelected != 'More',
-              'text-white': type == 'dark' && menuItemSelected != 'More',
-            })} >
-              More
-            </span>
-          </div>
         </div>
         <button className={
           clsx(

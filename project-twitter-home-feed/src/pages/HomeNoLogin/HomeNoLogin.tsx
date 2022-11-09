@@ -1,21 +1,21 @@
 import { useState } from 'react'
-import { Follow } from '../components/Follow';
-import { Footer } from '../components/Footer';
-import { Header } from '../components/Header';
+import { Follow } from '../../components/Follow';
+import { Footer } from '../../components/Footer';
+import { Header } from '../../components/Header';
 
-import { News } from '../components/News';
-import { Post } from '../components/Post';
-import { SearchBar } from '../components/SearchBar';
-import { SideMenu } from '../components/SideMenu';
-import { Spacer } from '../components/Spacer';
-import { TermsOfService } from '../components/TermsOfService';
-import { Tweet } from '../components/Tweet';
-import '../styles/global.css';
-
-
+import { News } from '../../components/News';
+import { Post } from '../../components/Post';
+import { SearchBar } from '../../components/SearchBar';
+import { SideMenu } from '../../components/SideMenu';
+import { Spacer } from '../../components/Spacer';
+import { TermsOfService } from '../../components/TermsOfService';
+import { Tweet } from '../../components/Tweet';
+import '../../styles/global.css';
 
 
-export function HomeNoLogin() {
+
+
+ function HomeNoLogin() {
 
   return (
     <div className="  flex  flex-col h-2/3  overflow-hidden  bg-white dark:bg-black ">
@@ -51,3 +51,5 @@ export function HomeNoLogin() {
 
   )
 }
+
+export default HomeNoLogin;

@@ -1,95 +1,50 @@
-import clsx from 'clsx';
+
 import { useState } from 'react'
 import { Follow } from './components/Follow';
 import { Footer } from './components/Footer';
-import { Header, HeaderProps } from './components/Header';
+import { Header  } from './components/Header';
 import { News } from './components/News';
 import { Post } from './components/Post';
-import { ProfileArea } from './components/ProfileArea';
 import { SearchBar } from './components/SearchBar';
 import { SideMenu } from './components/SideMenu';
 import { Spacer } from './components/Spacer';
-import { TabBar } from './components/TabBar';
 import { TermsOfService } from './components/TermsOfService';
 import { Tweet } from './components/Tweet';
-
 import './styles/global.css';
 
-
-
-
-export function App() {
-   //Dark mode ou não.
-
-const [typePage, setTypePage] = useState();
-  const completePage = {
-    content: <div className="flex  flex-col h-2/3  overflow-hidden  ">
-      <div className='grid grid-cols-4 '>
-        <div className="flex justify-center">
-          <SideMenu menuItemSelected={'Home'} />
-        </div>
-        <div className='col-span-2 px-16 main-section-tweets scrollbar overflow-y-auto  h-screen' >
-          <div className="border-x border-dark-7">
-            <div className="flex flex-col gap-8 ">
-          <Header   />
-              <Post    />
-            </div>
-            <Spacer />
-            <Tweet textPost={'Lorem jqhswjuw wwjhcu ghj jkj.'} />
-            <Tweet textPost={'Lorem jqhswjuw wwjhcu ghj jkj.'} />
-          </div>
-        </div>
-
-        <div className='flex flex-col gap-4 items-center  px-14 py-3'>
-          <SearchBar />
-          <News />
-          <Follow />
-          <TermsOfService />
-
-        </div>
-      </div>
-      <div className="h-28">
-        <Footer type='dark' />
-      </div>
-    </div>
-  }
+import {BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom'
+import Home from './pages/Home/Home';
+import Error404Page from './pages/Error404/Error404Page';
+import HomeNoLogin from './pages/HomeNoLogin/HomeNoLogin';
+import Log from './pages/Log/Log';
+import ProfPage from './pages/ProfPage/ProfPage';
+import Sign from './pages/Sign/Sign';
+function AppRouter() {
 
   return (
+ //Rotas
+ <Router>
+ <Routes>
+   <Route  path='/home' element ={<Home /> } />
+   <Route  path='/error404' element ={<Error404Page /> } />
+   <Route  path='/homeNoLogin'  element ={<HomeNoLogin />  } />
+   
+   <Route  path='/login' element ={<Log /> } />
+   <Route  path='/profile' element ={<ProfPage /> } />
+   <Route  path='/signup' element ={<Sign /> } />
+   {/* Configuração dapágina 404 */}
+   <Route path='*' element ={<Navigate to="/error404"/>} />
 
-    <div className="  flex  flex-col h-2/3  overflow-hidden  bg-white dark:bg-black ">
-      <div className='grid grid-cols-4 '>
-        <div className="flex justify-center">
-          <SideMenu menuItemSelected={'Home'} />
-        </div>
-        <div className='col-span-2 px-16 main-section-tweets scrollbar overflow-y-auto  h-screen' >
-          <div className="border-x border-dark-7 dark:border-dark-4">
-            <div className="flex flex-col gap-8 ">
-              <Header />
-              <Post />
-            </div>
-            <Spacer />
-            <Tweet textPost={'Lorem jqhswjuw wwjhcu ghj jkj.'} />
-            <Tweet textPost={'Lorem jqhswjuw wwjhcu ghj jkj.'} />
-          </div>
-        </div>
-
-        <div className='flex flex-col gap-6 items-center  px-14 py-3'>
-          <SearchBar />
-          <News />
-          <Follow />
-          <TermsOfService />
-
-        </div>
-      </div>
-      <div className="h-28">
-        <Footer  />
-      </div>
-    </div>
-
-
-
+ </Routes>
+</Router>
   )
+ 
 }
+
+export default AppRouter;
+
+
+
 
 
 

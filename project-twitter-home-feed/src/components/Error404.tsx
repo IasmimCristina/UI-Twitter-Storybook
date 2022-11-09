@@ -1,5 +1,6 @@
 import { clsx } from 'clsx';
 import { TwitterLogo, CircleWavyWarning, LinkBreak, User, Bird } from "phosphor-react";
+import { Link } from 'react-router-dom';
 import { Footer } from './Footer';
 
 
@@ -66,7 +67,7 @@ themeCheck();
 
 
           <div className=" flex flex-col items-center justify-center">
-            <Bird  onClick={toggleClicked} weight="fill" className={clsx('w-36 h-36 cursor-pointer hover:text-dark-4 transition-all dark:text-white', {
+            <Bird  onClick={toggleClicked} weight="fill" className={clsx('w-36 h-36 cursor-pointer hover:text-dark-4 dark:hover:text-dark-4  transition-all dark:text-white ', {
               'text-primary-blue': type === 'normal',
               'text-white': type === 'dark',
             })} />
@@ -85,17 +86,19 @@ themeCheck();
 
 
         <div className="flex justify-center items-center flex-col">
-          <button className={clsx(' w-476px  mt-16 text-size18 font-sans font-bold rounded-full transition-all border focus:ring-4 ring-dark-5 h-16  text-white  border-primary-blue     bg-primary-blue hover:text-primary-blue  hover:bg-transparent  ', {
-          })}>Go back to Home</button>
+          <Link to={"/home"}>
+            <button className={clsx(' w-476px  mt-16 text-size18 font-sans font-bold rounded-full transition-all border focus:ring-4 ring-dark-5 h-16  text-white  border-primary-blue     bg-primary-blue hover:text-primary-blue  hover:bg-transparent  ', {
+            })}>Go back to Home</button>
+          </Link>
 
 
           <div className='  w-600px flex justify-between  h-14 items-center  px-3 mt-6 text-primary-blue text-size18 ' >
-            <span className={'flex  gap-2  items-center font-400 transition-all cursor-pointer hover:text-xlg '} > <User /> Go to profile page?</span>
+            <span className={'flex  gap-2  items-center font-400 transition-all cursor-pointer hover:text-xlg '} > <User /> Go to Profile Page?</span>
 
 
             <div >
 
-              <span className={'flex  items-center font-400   gap-2 transition-all cursor-pointer hover:text-xlg hover:text-red'} > <LinkBreak />  Log out?  </span>
+              <span className={'flex  items-center font-400   gap-2 transition-all cursor-pointer hover:text-xlg hover:text-red'} > <LinkBreak />  Go to Log In Page?  </span>
             </div>
 
           </div>

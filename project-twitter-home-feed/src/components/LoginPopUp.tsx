@@ -15,37 +15,37 @@ export interface LoginPopUpProps {
 }
 export function LoginPopUp({ type = 'normal' }: LoginPopUpProps) {
 
-//Variáveis do theme
-const userTheme = localStorage.getItem("theme");
-const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  //Variáveis do theme
+  const userTheme = localStorage.getItem("theme");
+  const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-//Checagem inicial
-const themeCheck = () => {
-  if (userTheme === "dark" || (!userTheme && systemTheme)) {
-    document.documentElement.classList.add("dark")
-    return;
+  //Checagem inicial
+  const themeCheck = () => {
+    if (userTheme === "dark" || (!userTheme && systemTheme)) {
+      document.documentElement.classList.add("dark")
+      return;
+    }
+
   }
 
-}
+  const themeSwitch = () => {
+    if (document.documentElement.classList.contains("dark")) {
+      document.documentElement.classList.remove('dark')
+      localStorage.setItem("theme", "normal")
+      return;
+    }
+    document.documentElement.classList.add('dark')
+    localStorage.setItem("theme", "dark")
 
-const themeSwitch = () => {
-  if (document.documentElement.classList.contains("dark")) {
-    document.documentElement.classList.remove('dark')
-    localStorage.setItem("theme", "normal")
-    return;
+
   }
-  document.documentElement.classList.add('dark')
-  localStorage.setItem("theme", "dark")
 
+  const toggleClicked = () => {
+    themeSwitch();
+  }
 
-}
-
-const toggleClicked = () => {
-  themeSwitch();
-}
-
-//Invocando a checagem do tema.
-themeCheck();
+  //Invocando a checagem do tema.
+  themeCheck();
 
   return (
 
