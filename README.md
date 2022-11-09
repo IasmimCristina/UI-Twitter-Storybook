@@ -21,7 +21,7 @@ Storybook das telas principais Twitter com suas versões light e dark.
 </p>
 
 <h3 align="center" color="darkred">
-✨ Página Home, Profile,Sign Up, Login e suas variações ✨ 
+✨ Página Home, Profile, Sign Up, Login e suas variações ✨ 
 </h3>
 <div align="center" color="darkred">
 
