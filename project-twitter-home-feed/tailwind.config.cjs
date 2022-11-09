@@ -1,8 +1,9 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {  
+module.exports = {    
   content: [
     './src/**/*.tsx',
   ],
+  darkMode: "media",
   theme: {
     fontSize: {
       // Tamanhos: || 13 14 15 16 19 20

@@ -18,7 +18,7 @@ export interface Error404Props {
 export function Error404({ type = 'normal' }: Error404Props) {
 
   return (
-    <div className={clsx('w-full h-screen    ', {
+    <div className={clsx('w-full h-screen dark:bg-black   ', {
       'bg-white': type === 'normal',
       'bg-black': type === 'dark',
 

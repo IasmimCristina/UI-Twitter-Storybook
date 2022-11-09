@@ -28,12 +28,23 @@ Storybook da tela Home do Twitter com suas versões light e dark.
 ## 📖 Status do projeto:
 * Incompleto. 🕁
 * Apenas o Storybook feito. 
-* Para iniciá-lo precisa-se de uma versão 16 do Node.
+* Para iniciá-lo precisa-se de uma **versão 16** do Node.
 * Entre na pasta principal do projeto e digite o seguinte comando:
 
                npm run storybook
 
-
+### Contas criadas para testes:
+- [x] Conta 01 👤
+- **E-mail:** ias@example.com
+- **Senha:** 1234
+***
+- [x] Conta 02 👤
+- **E-mail:** example@example.com
+- **Senha:** example
+***
+- [x] Conta 03 👤
+- **E-mail:** cookie@cookie.com
+- **Senha:** cookie
 
 ## Requisitos 👩‍💻 
  - [X]  Componentes no Storybook;

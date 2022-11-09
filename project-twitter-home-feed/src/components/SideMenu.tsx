@@ -23,16 +23,16 @@ export function SideMenu({ type = 'normal', menuItemSelected = 'Home' }: SideMen
 
 
   return (
-    <div className='p-4 h-screen flex flex-col  justify-between ml-10'>
+    <div className='p-4 h-screen flex flex-col  justify-between ml-10 '>
       <div className="">
         <div className="ml-2">
-          <TwitterLogo weight="fill" className={clsx(' h-7 w-6', {
+          <TwitterLogo weight="fill" className={clsx(' h-7 w-6 dark:text-white ', {
             'text-primary-blue': type == 'normal',
             'text-white': type == 'dark',
           })} />
 
 
-          <div className={clsx(`flex justify-start  gap-4 h-16 w-64  items-center cursor-pointer transition-all hover:border-box hover:border-2 `, {
+          <div className={clsx(`flex justify-start  gap-4 h-16 w-64  items-center cursor-pointer transition-all hover:border-box hover:border-2 dark:border-white`, {
             'border-primary-blue': type == 'normal',
             'border-white': type == 'dark',
 
@@ -44,7 +44,7 @@ export function SideMenu({ type = 'normal', menuItemSelected = 'Home' }: SideMen
 
               'text-primary-blue': menuItemSelected === 'Home',
 
-              'text-black': type == 'normal' && menuItemSelected != 'Home',
+              'text-black dark:text-white ': type == 'normal' && menuItemSelected != 'Home',
               'text-white': type == 'dark' && menuItemSelected != 'Home',
 
 
@@ -53,7 +53,7 @@ export function SideMenu({ type = 'normal', menuItemSelected = 'Home' }: SideMen
 
               'text-primary-blue': menuItemSelected === 'Home',
 
-              'text-black': type == 'normal' && menuItemSelected != 'Home',
+              'text-black dark:text-white': type == 'normal' && menuItemSelected != 'Home',
               'text-white': type == 'dark' && menuItemSelected != 'Home',
 
 
@@ -62,7 +62,7 @@ export function SideMenu({ type = 'normal', menuItemSelected = 'Home' }: SideMen
             </span>
           </div>
 
-          <div className={clsx(`flex justify-start  gap-4 h-16 w-64  items-center cursor-pointer transition-all hover:border-box hover:border-2 `, {
+          <div className={clsx(`flex justify-start  gap-4 h-16 w-64  items-center cursor-pointer transition-all hover:border-box hover:border-2 dark:border-white `, {
             'border-primary-blue': type == 'normal',
             'border-white': type == 'dark',
 
@@ -72,19 +72,19 @@ export function SideMenu({ type = 'normal', menuItemSelected = 'Home' }: SideMen
 
               'text-primary-blue': menuItemSelected === 'Explore',
 
-              'text-black': type == 'normal' && menuItemSelected != 'Explore',
+              'text-black  dark:text-white': type == 'normal' && menuItemSelected != 'Explore',
               'text-white': type == 'dark' && menuItemSelected != 'Explore',
             })} />
             <span className={clsx(`font-sans font-bold text-lg  `, {
               'text-primary-blue': menuItemSelected === 'Explore',
 
-              'text-black': type == 'normal' && menuItemSelected != 'Explore',
+              'text-black dark:text-white': type == 'normal' && menuItemSelected != 'Explore',
               'text-white': type == 'dark' && menuItemSelected != 'Explore',
             })} >
               Explore
             </span>
           </div>
-          <div className={clsx(`flex justify-start  gap-4 h-16 w-64  items-center cursor-pointer transition-all hover:border-box hover:border-2 `, {
+          <div className={clsx(`flex justify-start  gap-4 h-16 w-64  items-center cursor-pointer transition-all hover:border-box hover:border-2  dark:border-white`, {
             'border-primary-blue': type == 'normal',
             'border-white': type == 'dark',
 
@@ -94,19 +94,19 @@ export function SideMenu({ type = 'normal', menuItemSelected = 'Home' }: SideMen
             <Bell className={clsx(`text-lg  ml-2 `, {
               'text-primary-blue': menuItemSelected === 'Notifications',
 
-              'text-black': type == 'normal' && menuItemSelected != 'Notifications',
+              'text-black dark:text-white': type == 'normal' && menuItemSelected != 'Notifications',
               'text-white': type == 'dark' && menuItemSelected != 'Notifications',
             })} />
             <span className={clsx(`font-sans font-bold text-lg  `, {
               'text-primary-blue': menuItemSelected === 'Notifications',
 
-              'text-black': type == 'normal' && menuItemSelected != 'Notifications',
+              'text-black dark:text-white': type == 'normal' && menuItemSelected != 'Notifications',
               'text-white': type == 'dark' && menuItemSelected != 'Notifications',
             })} >
               Notifications
             </span>
           </div>
-          <div className={clsx(`flex justify-start  gap-4 h-16 w-64  items-center cursor-pointer transition-all hover:border-box hover:border-2 `, {
+          <div className={clsx(`flex justify-start  gap-4 h-16 w-64  items-center cursor-pointer transition-all hover:border-box hover:border-2 dark:border-white`, {
             'border-primary-blue': type == 'normal',
             'border-white': type == 'dark',
 
@@ -116,19 +116,19 @@ export function SideMenu({ type = 'normal', menuItemSelected = 'Home' }: SideMen
             <EnvelopeSimple className={clsx(`text-lg   ml-2`, {
               'text-primary-blue': menuItemSelected === 'Messages',
 
-              'text-black': type == 'normal' && menuItemSelected != 'Messages',
+              'text-black dark:text-white': type == 'normal' && menuItemSelected != 'Messages',
               'text-white': type == 'dark' && menuItemSelected != 'Messages',
             })} />
             <span className={clsx(`font-sans font-bold text-lg  `, {
               'text-primary-blue': menuItemSelected === 'Messages',
 
-              'text-black': type == 'normal' && menuItemSelected != 'Messages',
+              'text-black dark:text-white': type == 'normal' && menuItemSelected != 'Messages',
               'text-white': type == 'dark' && menuItemSelected != 'Messages',
             })} >
               Messages
             </span>
           </div>
-          <div className={clsx(`flex justify-start  gap-4 h-16 w-64  items-center cursor-pointer transition-all hover:border-box hover:border-2 `, {
+          <div className={clsx(`flex justify-start  gap-4 h-16 w-64  items-center cursor-pointer transition-all hover:border-box hover:border-2 dark:border-white`, {
             'border-primary-blue': type == 'normal',
             'border-white': type == 'dark',
 
@@ -138,19 +138,19 @@ export function SideMenu({ type = 'normal', menuItemSelected = 'Home' }: SideMen
             <BookmarkSimple className={clsx(`text-lg   ml-2`, {
               'text-primary-blue': menuItemSelected === 'Bookmarks',
 
-              'text-black': type == 'normal' && menuItemSelected != 'Bookmarks',
+              'text-black dark:text-white': type == 'normal' && menuItemSelected != 'Bookmarks',
               'text-white': type == 'dark' && menuItemSelected != 'Bookmarks',
             })} />
             <span className={clsx(`font-sans font-bold text-lg  `, {
               'text-primary-blue': menuItemSelected === 'Bookmarks',
 
-              'text-black': type == 'normal' && menuItemSelected != 'Bookmarks',
+              'text-black dark:text-white': type == 'normal' && menuItemSelected != 'Bookmarks',
               'text-white': type == 'dark' && menuItemSelected != 'Bookmarks',
             })} >
               Bookmarks
             </span>
           </div>
-          <div className={clsx(`flex justify-start  gap-4 h-16 w-64  items-center cursor-pointer transition-all hover:border-box hover:border-2 `, {
+          <div className={clsx(`flex justify-start  gap-4 h-16 w-64  items-center cursor-pointer transition-all hover:border-box hover:border-2 dark:border-white`, {
             'border-primary-blue': type == 'normal',
             'border-white': type == 'dark',
 
@@ -160,19 +160,19 @@ export function SideMenu({ type = 'normal', menuItemSelected = 'Home' }: SideMen
             <ListChecks className={clsx(`text-lg   ml-2`, {
               'text-primary-blue': menuItemSelected === 'Lists',
 
-              'text-black': type == 'normal' && menuItemSelected != 'Lists',
+              'text-black dark:text-white': type == 'normal' && menuItemSelected != 'Lists',
               'text-white': type == 'dark' && menuItemSelected != 'Lists',
             })} />
             <span className={clsx(`font-sans font-bold text-lg  `, {
               'text-primary-blue': menuItemSelected === 'Lists',
 
-              'text-black': type == 'normal' && menuItemSelected != 'Lists',
-              'text-white': type == 'dark' && menuItemSelected != 'Lists',
+              'text-black dark:text-white': type == 'normal' && menuItemSelected != 'Lists',
+              'text-white ': type == 'dark' && menuItemSelected != 'Lists',
             })} >
               Lists
             </span>
           </div>
-          <div className={clsx(`flex justify-start  gap-4 h-16 w-64  items-center cursor-pointer transition-all hover:border-box hover:border-2 `, {
+          <div className={clsx(`flex justify-start  gap-4 h-16 w-64  items-center cursor-pointer transition-all hover:border-box hover:border-2 dark:border-white `, {
             'border-primary-blue': type == 'normal',
             'border-white': type == 'dark',
 
@@ -182,19 +182,19 @@ export function SideMenu({ type = 'normal', menuItemSelected = 'Home' }: SideMen
             <UserCircle className={clsx(`text-lg   ml-2`, {
               'text-primary-blue': menuItemSelected === 'Profile',
 
-              'text-black': type == 'normal' && menuItemSelected != 'Profile',
+              'text-black dark:text-white': type == 'normal' && menuItemSelected != 'Profile',
               'text-white': type == 'dark' && menuItemSelected != 'Profile',
             })} />
             <span className={clsx(`font-sans font-bold text-lg  `, {
               'text-primary-blue': menuItemSelected === 'Profile',
 
-              'text-black': type == 'normal' && menuItemSelected != 'Profile',
+              'text-black dark:text-white': type == 'normal' && menuItemSelected != 'Profile',
               'text-white': type == 'dark' && menuItemSelected != 'Profile',
             })} >
               Profile
             </span>
           </div>
-          <div className={clsx(`flex justify-start  gap-4 h-16 w-64  items-center cursor-pointer transition-all hover:border-box hover:border-2 `, {
+          <div className={clsx(`flex justify-start  gap-4 h-16 w-64  items-center cursor-pointer transition-all hover:border-box hover:border-2 dark:border-white `, {
             'border-primary-blue': type == 'normal',
             'border-white': type == 'dark',
 
@@ -204,13 +204,13 @@ export function SideMenu({ type = 'normal', menuItemSelected = 'Home' }: SideMen
             <DotsThreeCircle className={clsx(`text-lg   ml-2`, {
               'text-primary-blue': menuItemSelected === 'More',
 
-              'text-black': type == 'normal' && menuItemSelected != 'More',
+              'text-black dark:text-white': type == 'normal' && menuItemSelected != 'More',
               'text-white': type == 'dark' && menuItemSelected != 'More',
             })} />
             <span className={clsx(`font-sans font-bold text-lg  `, {
               'text-primary-blue': menuItemSelected === 'More',
 
-              'text-black': type == 'normal' && menuItemSelected != 'More',
+              'text-black dark:text-white': type == 'normal' && menuItemSelected != 'More',
               'text-white': type == 'dark' && menuItemSelected != 'More',
             })} >
               More
@@ -232,21 +232,21 @@ export function SideMenu({ type = 'normal', menuItemSelected = 'Home' }: SideMen
           <div className="flex flex-row gap-2">
             <img className='h-10 w-10 rounded-full ml-2 bg-white text-sxs text-primary-blue border-0' src={image.src} alt={image.alt} />
             <div className="flex flex-col ">
-              <span className={clsx(` text-md  `, {
+              <span className={clsx(` text-md dark:text-white `, {
                 'text-black': type == 'normal',
                 'text-white': type == 'dark',
 
               })}>Davide Biscuso</span>
-              <span className={clsx(` text-md  `, {
+              <span className={clsx(` text-md dark:text-dark-6 `, {
                 'text-dark-5': type == 'normal',
                 'text-dark-6': type == 'dark',
 
               })}>@biscuttu</span>
             </div>
           </div>
-          <DotsThreeOutline className={clsx(' transition-all w-12 h-4 hover:w-14 hover:h-6 cursor-pointer hover:text-primary-blue', {
+          <DotsThreeOutline className={clsx(' transition-all w-12 h-4 hover:w-14 hover:h-6 cursor-pointer hover:text-primary-blue dark:text-white', {
 
-            'text-black': type == 'normal',
+            'text-black ': type == 'normal',
             'text-white': type == 'dark',
           })} />
         </div>

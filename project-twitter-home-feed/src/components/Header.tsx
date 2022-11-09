@@ -7,6 +7,7 @@ export interface HeaderProps {
 
   type?: 'dark' | 'normal';
   page?: 'Home' | 'Profile';
+  
 
 }
 export function Header({ type = 'normal', page = 'Home' }: HeaderProps) {
@@ -33,14 +34,8 @@ export function Header({ type = 'normal', page = 'Home' }: HeaderProps) {
       icon: '',
     };
   }
-  const [typeChanged, setTypeChanged] = useState('');
-  const toggleLightDark = () => {
-    if (type === 'normal') {
-      type = 'dark';
-    } else {
-      type = 'normal';
-    }
-  }
+ 
+
 
   return (
     <header className='h-4  p-2' >
@@ -60,7 +55,7 @@ export function Header({ type = 'normal', page = 'Home' }: HeaderProps) {
           </div>
         </div>
 
-        <div onClick={() => toggleLightDark()} className={clsx(' cursor-pointer h-8 text-primary-blue  flex  content-center', {
+        <div  className={clsx(' cursor-pointer h-8 text-primary-blue  flex  content-center', {
 
         })}>
           <Sparkle className={clsx('transition-all h-8 w-6  hover:h-9 hover:w-7', {
