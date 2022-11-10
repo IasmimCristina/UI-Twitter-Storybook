@@ -37,7 +37,7 @@ export function Footer({ type = 'normal' }: FooterProps) {
           </Link>
 
 
-          <Link to="/error404">
+          <Link to="/signup">
             <button className=" w-24 h-10  font-sans font-bold rounded-full transition-all border focus:ring-4 ring-dark-5 text-black   bg-white  border-white hover:text-white  hover:bg-transparent"
             >Sign up</button>
           </Link>
