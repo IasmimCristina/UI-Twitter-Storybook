@@ -86,7 +86,7 @@ themeCheck();
 
 
         <div className="flex justify-center items-center flex-col">
-          <Link to={"/home"}>
+          <Link to={"/"}>
             <button className={clsx(' w-476px  mt-16 text-size18 font-sans font-bold rounded-full transition-all border focus:ring-4 ring-dark-5 h-16  text-white  border-primary-blue     bg-primary-blue hover:text-primary-blue  hover:bg-transparent  ', {
             })}>Go back to Home</button>
           </Link>

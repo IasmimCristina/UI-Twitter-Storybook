@@ -1,6 +1,7 @@
 import { ReactNode, useState } from 'react';
 import { clsx } from 'clsx';
 import { Sparkle, ArrowLeft } from "phosphor-react";
+import { usersData } from '../types/UserData';
 
 
 export interface HeaderProps {
@@ -11,6 +12,27 @@ export interface HeaderProps {
 
 }
 export function Header({ type = 'normal', page = 'Home' }: HeaderProps) {
+
+//Pegando dados do local storage:
+let userLogged = JSON.parse(localStorage.getItem('currentUserLogged') || '')
+
+let name;
+
+if (userLogged.name === 'Cookie') {
+ 
+  name = usersData[0].name;
+  
+} else if (userLogged.name === 'Ias')  {
+  
+  name = usersData[1].name;
+  
+} else {  
+  name = usersData[2].name;
+ 
+}
+
+
+
   let profileContent;
   if (page === 'Profile') {
     profileContent = {
@@ -19,7 +41,7 @@ export function Header({ type = 'normal', page = 'Home' }: HeaderProps) {
         'text-dark-6': type === 'dark',
 
       })} > 9 tweets </span>,
-      name: 'Name',
+      name: name,
       icon: <div className=" w-9 h-8">
         <ArrowLeft weight="bold" className={clsx('text-primary-blue w-8 h-7 cursor-pointer transition-all hover:w-9 hover:h-8 dark:hover:text-white ', {
           'hover:text-black ': type === 'normal',
@@ -66,6 +88,10 @@ export function Header({ type = 'normal', page = 'Home' }: HeaderProps) {
 
   //Invocando a checagem do tema.
   themeCheck();
+
+
+  
+
 
 
   return (

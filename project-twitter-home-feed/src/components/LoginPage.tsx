@@ -86,7 +86,9 @@ export function LoginPage({ type = 'normal' }: LoginPageProps) {
     }
   );
   //-------------------------
+  // Validação do usuário
 
+  
   const [isValid, setIsValid] = useState(false);
 
   console.log({ formState });
@@ -106,18 +108,20 @@ export function LoginPage({ type = 'normal' }: LoginPageProps) {
         name: "",
         posts: listPosts,
       };
-      setIsValid(false)
-      return;
+     
+      
     } else {
 
       for (let i = 0; i < users.length; i++) {
 
-        if (users[i].email === email && users[i].password === password) {
-          userLogged = users[i]
+        if (users[i].email == email && users[i].password == password) {
           setIsValid(true)
+          console.log(users[i]);
+          userLogged = users[i]
+          
           
         } else {
-          setIsValid(false)
+         
           
         }
         
@@ -130,7 +134,9 @@ export function LoginPage({ type = 'normal' }: LoginPageProps) {
 
     if (isValid) {
       window.alert(`Sucesso! Olá novamente, ${userLogged.name}!`)
-      console.log(userLogged)
+      //Criação do usuário no local storage.
+      localStorage.setItem('currentUserLogged', JSON.stringify(userLogged))
+      
       return (
         
         window.location.replace('http://localhost:5173/home')
@@ -144,6 +150,7 @@ export function LoginPage({ type = 'normal' }: LoginPageProps) {
         name: "",
         posts: listPosts,
       };
+      localStorage.setItem('currentUserLogged', JSON.stringify(userLogged))
         window.alert("Dados inválidos!")
     }
 

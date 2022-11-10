@@ -1,4 +1,5 @@
 import clsx from "clsx"
+import { Link } from "react-router-dom";
 
 
 
@@ -31,8 +32,12 @@ export function Footer({ type = 'normal' }: FooterProps) {
         <section className="flex gap-4">
           <button className="  w-20 h-10 font-sans font-bold rounded-full transition-all border focus:ring-4 ring-dark-5 text-white   bg-transparent  border-white hover:text-black hover:bg-white  "
           >Log in</button>
-          <button className=" w-24 h-10  font-sans font-bold rounded-full transition-all border focus:ring-4 ring-dark-5 text-black   bg-white  border-white hover:text-white  hover:bg-transparent"
-          >Sign up</button>
+
+
+          <Link to="/error404">
+            <button className=" w-24 h-10  font-sans font-bold rounded-full transition-all border focus:ring-4 ring-dark-5 text-black   bg-white  border-white hover:text-white  hover:bg-transparent"
+            >Sign up</button>
+          </Link>
         </section>
       </div>
     </footer>

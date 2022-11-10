@@ -3,10 +3,11 @@ import { House, HashStraight, Bell, EnvelopeSimple, ListChecks, BookmarkSimple, 
 import { Link } from 'react-router-dom';
 
 
-import imageFile from '../static/Profile.svg';
+import { usersData } from '../types/UserData';
+import { TweetProps } from './Tweet';
 
 const image = {
-  src: imageFile,
+  src: "",
   alt: 'User',
 };
 
@@ -21,39 +22,73 @@ export interface SideMenuProps {
 }
 export function SideMenu({ type = 'normal', menuItemSelected = 'Home', page = 'pageHome' }: SideMenuProps) {
 
-  let sideMenuProfile;
-  if (page === "pageHome") {
-    sideMenuProfile = {
-      content: <div className="flex flex-row gap-2 w-64  justify-between items-center">
-        <div className="flex flex-row gap-2">
-          <img className='h-10 w-10 rounded-full ml-2 bg-white text-sxs text-primary-blue border-0' src={image.src} alt={image.alt} />
-          <div className="flex flex-col ">
-            <span className={clsx(` text-md dark:text-white `, {
-              'text-black': type == 'normal',
-              'text-white': type == 'dark',
+  //Pegando dados do local storage:
+  let userLogged = JSON.parse(localStorage.getItem('currentUserLogged') || '')
 
-            })}>Davide Biscuso</span>
-            <span className={clsx(` text-md dark:text-dark-6 `, {
-              'text-dark-5': type == 'normal',
-              'text-dark-6': type == 'dark',
+  let name, nickname;
 
-            })}>@biscuttu</span>
-          </div>
-        </div>
+  if (userLogged.name === 'Cookie') {
+    image.src = usersData[0].profilePicture;
+    name = usersData[0].name;
+    nickname = usersData[0].nickname;
+  } else if (userLogged.name === 'Ias') {
+    image.src = usersData[1].profilePicture;
+    name = usersData[1].name;
+    nickname = usersData[1].nickname;
+  } else {
+    image.src = usersData[2].profilePicture;
+    name = usersData[2].name;
+    nickname = usersData[2].nickname;
+  }
 
-        <Link to="/profile">
-          <DotsThreeOutline className={clsx(' transition-all w-12 h-4 hover:w-14 hover:h-6 cursor-pointer hover:text-primary-blue dark:text-white dark:hover:text-primary-blue', {
-            'text-black ': type == 'normal',
+  let listPosts: TweetProps[] = []
+  
+ 
+   const wantLogOut = () => {
+     if (confirm("Do you wish to log out?")) {
+      userLogged = {
+        email: "",
+        password: "",
+        name: "",
+        posts: listPosts,
+      };
+       localStorage.setItem('currentUserLogged', JSON.stringify(userLogged));
+       window.location.replace("http://localhost:5173/signup")
+     } else {
+       alert("Okay then, have a good time browsing!")
+     }
+ 
+   }
+ 
+
+
+  if (page === "HomeNoLogin") {
+    return (
+      <div className='p-4 h-screen  flex-col flex justify-between  '>
+
+        <div className="ml-24">
+          <TwitterLogo weight="fill" className={clsx(' h-20 w-20 dark:text-white ', {
+            'text-primary-blue': type == 'normal',
             'text-white': type == 'dark',
           })} />
-        </Link>
-      </div>
-    }
-  } else {
-    sideMenuProfile = {
-      content: '',
-    }
+
+
+        </div>
+
+        <button className={
+          clsx(
+            'mt-2 mb-64 font-sans font-bold rounded-full transition-all border-2 focus:ring-4 ring-dark-5 py-3 px-24 text-white   bg-primary-blue hover:text-primary-blue  hover:bg-transparent  border-primary-blue',
+            {
+            }
+          )}>
+          Log In?
+        </button>
+
+
+      </div >
+    )
   }
+
 
 
   return (
@@ -251,7 +286,33 @@ export function SideMenu({ type = 'normal', menuItemSelected = 'Home', page = 'p
       <div className="flex flex-row gap-2   ">
 
 
-        {sideMenuProfile.content}
+        <div className="flex flex-row gap-2 w-64  justify-between items-center">
+          <div className="flex flex-row gap-2">
+            <img className='h-10 w-10 rounded-full ml-2 bg-white text-sxs text-primary-blue border-0' src={image.src} alt={image.alt} />
+            <div className="flex flex-col ">
+              <span className={clsx(` text-md dark:text-white `, {
+                'text-black': type == 'normal',
+                'text-white': type == 'dark',
+
+              })}>{name}</span>
+              <span className={clsx(` text-md dark:text-dark-6 `, {
+                'text-dark-5': type == 'normal',
+                'text-dark-6': type == 'dark',
+
+              })}>{nickname}</span>
+            </div>
+          </div>
+
+
+          <DotsThreeOutline onClick={wantLogOut} className={clsx(' transition-all w-12 h-4 hover:w-14 hover:h-6 cursor-pointer hover:text-primary-blue dark:text-white dark:hover:text-primary-blue', {
+            'text-black ': type == 'normal',
+            'text-white': type == 'dark',
+          })} />
+
+        </div>
+
+
+
       </div>
 
 

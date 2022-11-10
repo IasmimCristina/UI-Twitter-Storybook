@@ -129,7 +129,9 @@ export function News({ type = 'normal', }: NewsProps) {
           })} src={image.src02} alt={image.alt} />
 
         </div>
-        <div className="flex items-center h-11  pl-2"><a className='ml-2  transition-all  font-sans text-sm font-semibold text-primary-blue hover:text-md' href="#">Show more</a></div>
+        <div className="flex items-center h-11  pl-2">
+          <a className='ml-2  transition-all  font-sans text-sm font-semibold text-primary-blue hover:text-md' href="/error404">Show more</a>
+        </div>
       </div>
 
     </div >

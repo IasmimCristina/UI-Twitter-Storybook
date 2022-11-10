@@ -1,6 +1,7 @@
 import { clsx } from 'clsx';
 import { Image, Gif, ChartBarHorizontal, Smiley, CalendarCheck } from "phosphor-react";
 import imageFile from '../static/Profile.svg';
+import { usersData } from '../types/UserData';
 
 const image = {
   src: imageFile,
@@ -14,6 +15,24 @@ export interface PostProps {
 
 }
 export function Post({ type = 'normal' }: PostProps) {
+
+  //Pegando dados do local storage:
+  let userLogged = JSON.parse(localStorage.getItem('currentUserLogged') || '')
+
+  if (userLogged.name === 'Cookie') {
+    image.src = usersData[0].profilePicture;
+   
+    
+  } else if (userLogged.name === 'Ias')  {
+    image.src = usersData[1].profilePicture;
+   
+  
+  } else {
+    image.src = usersData[2].profilePicture;
+   
+   
+  }
+
 
   return (
     <div className='flex  h-28  items-center justify-between p-4' >

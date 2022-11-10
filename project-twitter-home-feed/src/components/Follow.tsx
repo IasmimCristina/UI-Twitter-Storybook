@@ -1,4 +1,5 @@
 import { clsx } from 'clsx';
+import { Link } from 'react-router-dom';
 
 
 
@@ -59,10 +60,12 @@ export function Follow({ type = 'normal', }: FollowProps) {
                 })}>@biscuttu</span>
               </div>
             </div>
-            <button className=
-              'font-sans font-bold rounded-full transition-all border focus:ring-4 ring-dark-5  h-8  w-20 text-sm text-primary-blue    bg-transparent   border-primary-blue hover:text-white  hover:bg-primary-blue'>
-              Follow
-            </button>
+            <Link to="/error404">
+              <button className=
+                  'font-sans font-bold rounded-full transition-all border focus:ring-4 ring-dark-5 h-8   w-20 text-sm text-primary-blue   bg-transparent  border-primary-blue hover:text-white  hover:bg-primary-blue '>
+                Follow
+              </button>
+            </Link>
 
 
 
@@ -93,10 +96,12 @@ export function Follow({ type = 'normal', }: FollowProps) {
                 })}>@biscuttu</span>
               </div>
             </div>
-            <button className=
-                'font-sans font-bold rounded-full transition-all border focus:ring-4 ring-dark-5 h-8   w-20 text-sm text-primary-blue   bg-transparent  border-primary-blue hover:text-white  hover:bg-primary-blue '>
-              Follow
-            </button>
+            <Link to="/error404">
+              <button className=
+                  'font-sans font-bold rounded-full transition-all border focus:ring-4 ring-dark-5 h-8   w-20 text-sm text-primary-blue   bg-transparent  border-primary-blue hover:text-white  hover:bg-primary-blue '>
+                Follow
+              </button>
+            </Link>
 
 
 
@@ -108,7 +113,9 @@ export function Follow({ type = 'normal', }: FollowProps) {
 
 
 
-        <div className="flex items-center h-11  pl-2"><a className='ml-2  transition-all  font-sans text-sm font-semibold text-primary-blue hover:text-md' href="#">Show more</a></div>
+        <Link to="/error404">
+          <div className="flex items-center h-11  pl-2"><a className='ml-2  transition-all  font-sans text-sm font-semibold text-primary-blue hover:text-md' href="#">Show more</a></div>
+        </Link>
       </div>
 
     </div >
