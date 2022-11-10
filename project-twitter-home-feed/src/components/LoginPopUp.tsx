@@ -50,7 +50,7 @@ export function LoginPopUp({ type = 'normal' }: LoginPopUpProps) {
   return (
 
 
-    <div className={clsx(' w-450px h-476px  dark:bg-dark-3 rounded-xl border-4 border-primary-blue', {
+    <div id='defaultModal'  className={clsx(' w-450px h-476px  dark:bg-dark-3 rounded-xl border-4 border-primary-blue', {
       'bg-dark-7': type === 'normal',
       'bg-dark-3': type === 'dark',
     })} >

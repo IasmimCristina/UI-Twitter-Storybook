@@ -30,8 +30,11 @@ export function Footer({ type = 'normal' }: FooterProps) {
         </section>
 
         <section className="flex gap-4">
-          <button className="  w-20 h-10 font-sans font-bold rounded-full transition-all border focus:ring-4 ring-dark-5 text-white   bg-transparent  border-white hover:text-black hover:bg-white  "
-          >Log in</button>
+
+          <Link to="/signup">
+            <button className="  w-20 h-10 font-sans font-bold rounded-full transition-all border focus:ring-4 ring-dark-5 text-white   bg-transparent  border-white hover:text-black hover:bg-white  "
+            >Log in</button>
+          </Link>
 
 
           <Link to="/error404">

@@ -42,24 +42,24 @@ export function SideMenu({ type = 'normal', menuItemSelected = 'Home', page = 'p
   }
 
   let listPosts: TweetProps[] = []
-  
- 
-   const wantLogOut = () => {
-     if (confirm("Do you wish to log out?")) {
+
+
+  const wantLogOut = () => {
+    if (confirm("Do you wish to log out?")) {
       userLogged = {
         email: "",
         password: "",
         name: "",
         posts: listPosts,
       };
-       localStorage.setItem('currentUserLogged', JSON.stringify(userLogged));
-       window.location.replace("http://localhost:5173/signup")
-     } else {
-       alert("Okay then, have a good time browsing!")
-     }
- 
-   }
- 
+      localStorage.setItem('currentUserLogged', JSON.stringify(userLogged));
+      window.location.replace("http://localhost:5173/signup")
+    } else {
+      alert("Okay then, have a good time browsing!")
+    }
+
+  }
+
 
 
   if (page === "HomeNoLogin") {
@@ -75,14 +75,16 @@ export function SideMenu({ type = 'normal', menuItemSelected = 'Home', page = 'p
 
         </div>
 
-        <button className={
-          clsx(
-            'mt-2 mb-64 font-sans font-bold rounded-full transition-all border-2 focus:ring-4 ring-dark-5 py-3 px-24 text-white   bg-primary-blue hover:text-primary-blue  hover:bg-transparent  border-primary-blue',
-            {
-            }
-          )}>
-          Log In?
-        </button>
+        <Link to="/signup">
+          <button data-modal-toggle="defaultModal" className={
+            clsx(
+              'mt-2 mb-64 font-sans font-bold rounded-full transition-all border-2 focus:ring-4 ring-dark-5 py-3 px-24 text-white   bg-primary-blue hover:text-primary-blue  hover:bg-transparent  border-primary-blue',
+              {
+              }
+            )}>
+            Log In?
+          </button>
+        </Link>
 
 
       </div >
