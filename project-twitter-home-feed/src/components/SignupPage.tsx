@@ -82,7 +82,7 @@ export function SignupPage({ type = 'normal' }: SignupPageProps) {
           </section>
 
           {/* Botões da página. */}
-          <div className="flex flex-col gap-4 ml-4">
+          <div  className="flex flex-col gap-4 ml-4">
             <Link to="/error404">            
               <SignupButtons type={type} buttonType='Google' />             
             </Link> 

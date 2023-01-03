@@ -19,7 +19,6 @@ import '../../styles/global.css';
 
 
   return (
-
     <div className="  flex  flex-col h-2/3  overflow-hidden  bg-white dark:bg-black ">
       <div className='grid grid-cols-4 '>
         <div className="flex justify-center">
@@ -32,8 +31,8 @@ import '../../styles/global.css';
               <Post />
             </div>
             <Spacer />
-            <Tweet textPost={'Lorem jqhswjuw wwjhcu ghj jkj.'} />
-            <Tweet textPost={'Lorem jqhswjuw wwjhcu ghj jkj.'} />
+            <Tweet textPost={'Lorem bla bla.'} />
+            <Tweet textPost={'Lorem bla bla bla...'} />
           </div>
         </div>
 
@@ -49,9 +48,6 @@ import '../../styles/global.css';
         <Footer />
       </div>
     </div>
-
-
-
   )
 }
 

@@ -20,38 +20,38 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
 )
 
 
-//Página Login
-ReactDOM.createRoot(document.getElementById('rootLogin') as HTMLElement).render(
-  <React.StrictMode>
-   <Log/>  
-  </React.StrictMode>
-)
+// //Página Login
+// ReactDOM.createRoot(document.getElementById('rootLogin') as HTMLElement).render(
+//   <React.StrictMode>
+//    <Log/>  
+//   </React.StrictMode>
+// )
 
-//Página Error
-ReactDOM.createRoot(document.getElementById('rootError') as HTMLElement).render(
-  <React.StrictMode>
-   <Error404Page/>  
-  </React.StrictMode>
-)
+// //Página Error
+// ReactDOM.createRoot(document.getElementById('rootError') as HTMLElement).render(
+//   <React.StrictMode>
+//    <Error404Page/>  
+//   </React.StrictMode>
+// )
 
-//Página HomeNologin
-ReactDOM.createRoot(document.getElementById('rootHomeNoLogin') as HTMLElement).render(
-  <React.StrictMode>
-   <HomeNoLogin/>  
-  </React.StrictMode>
-)
+// //Página HomeNologin
+// ReactDOM.createRoot(document.getElementById('rootHomeNoLogin') as HTMLElement).render(
+//   <React.StrictMode>
+//    <HomeNoLogin/>  
+//   </React.StrictMode>
+// )
 
-//Página Profile
-ReactDOM.createRoot(document.getElementById('rootProfile') as HTMLElement).render(
-  <React.StrictMode>
-   <ProfPage/>  
-  </React.StrictMode>
-)
+// //Página Profile
+// ReactDOM.createRoot(document.getElementById('rootProfile') as HTMLElement).render(
+//   <React.StrictMode>
+//    <ProfPage/>  
+//   </React.StrictMode>
+// )
 
-//Página Signup
-ReactDOM.createRoot(document.getElementById('rootsign') as HTMLElement).render(
-  <React.StrictMode>
-   <Sign/>  
-  </React.StrictMode>
-)
+// //Página Signup
+// ReactDOM.createRoot(document.getElementById('rootsign') as HTMLElement).render(
+//   <React.StrictMode>
+//    <Sign/>  
+//   </React.StrictMode>
+// )
 
